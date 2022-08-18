@@ -112,6 +112,13 @@ ul {
 
 /* WORKS SECTION */
 
+.works {
+  display: grid;
+  justify-content: center;
+  row-gap: 20px;
+  margin-top: 30px;
+}
+
 .project-title {
   font-family: Poppins, sans-serif;
   font-size: 32px;
