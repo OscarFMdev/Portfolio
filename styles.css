@@ -3,6 +3,7 @@
   --headerColor: #172b4d;
   --worksBold: #344563;
   --worksLight: #7a869a;
+  --gridBackground: #e5e5e5;
 }
 
 /* GLOBALS */
@@ -117,6 +118,16 @@ ul {
   justify-content: center;
   row-gap: 20px;
   margin-top: 30px;
+  background-color: var(--gridBackground);
+}
+
+.project {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 552px;
 }
 
 .project-title {
@@ -141,7 +152,6 @@ ul {
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
-  color: var(--worksBold);
 }
 
 .project-data p {
@@ -152,4 +162,9 @@ ul {
   letter-spacing: 0em;
   text-align: left;
   color: var(--worksLight);
+}
+
+.project img {
+  height: 220px;
+  width: 295px;
 }
