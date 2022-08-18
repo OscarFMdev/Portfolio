@@ -102,3 +102,12 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+.project-title {
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
