@@ -1,0 +1,104 @@
+:root {
+  --projectPurple: #6070ff;
+  --headerColor: #172b4d;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+}
+
+nav {
+  margin-right: 30px;
+}
+
+.logo {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: var(--projectPurple);
+  margin-left: 30px;
+}
+
+.hamburguer {
+  color: var(--projectPurple);
+}
+
+.introduction {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.name {
+  padding-top: 70px;
+  color: var(--headerColor);
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.header-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.connect-text {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 10px;
+  color: var(--projectPurple);
+  margin-left: 20px;
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icons {
+  display: flex;
+  column-gap: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.social-media-icons img {
+  align-self: center;
+}
+
+.linkedin-logo {
+  height: 30px;
+  width: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
