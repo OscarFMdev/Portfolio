@@ -1,7 +1,11 @@
 :root {
   --projectPurple: #6070ff;
   --headerColor: #172b4d;
+  --worksBold: #344563;
+  --worksLight: #7a869a;
 }
+
+/* GLOBALS */
 
 header {
   width: 100%;
@@ -15,6 +19,8 @@ header {
   text-decoration: none;
   margin: 0;
 }
+
+/* HEADER SECTION */
 
 nav {
   margin-right: 30px;
@@ -103,6 +109,9 @@ ul {
   padding: 0;
 }
 
+
+/* WORKS SECTION */
+
 .project-title {
   font-family: Poppins, sans-serif;
   font-size: 32px;
@@ -110,4 +119,30 @@ ul {
   line-height: 44px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.project-data {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.bold {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--worksBold);
+}
+
+.project-data p {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--worksLight);
 }
