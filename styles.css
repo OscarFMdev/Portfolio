@@ -7,7 +7,8 @@ header {
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 * {
@@ -16,10 +17,7 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
+  margin-right: 30px;
 }
 
 .logo {
@@ -29,6 +27,7 @@ nav {
   line-height: 20px;
   text-align: center;
   color: var(--projectPurple);
+  margin-left: 30px;
 }
 
 .hamburguer {
@@ -98,4 +97,8 @@ nav {
 .linkedin-logo {
   height: 30px;
   width: auto;
+}
+ul {
+  list-style: none;
+  padding: 0;
 }
