@@ -119,15 +119,22 @@ ul {
   row-gap: 20px;
   margin-top: 30px;
   background-color: var(--gridBackground);
+  grid-template-columns: auto;
 }
 
 .project {
+  display: flex;
+  align-items: center;
+  width: 100%;
   background-color: white;
   padding: 10px;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.text-content {
   display: flex;
   flex-direction: column;
-  width: 327px;
-  height: 552px;
 }
 
 .project-title {
