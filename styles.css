@@ -39,9 +39,20 @@ nav {
   text-align: left;
 }
 
+.name {
+  padding-top: 70px;
+  color: #172B4D;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 .header-banner {
   width: 100%;
-  height: calc(100vh - 135px);
+  height: calc(100vh - 137px); /*137px is the height of the nav*/
   background-image: url("./images/background.png");
   background-repeat: no-repeat;
   background-position: center;
