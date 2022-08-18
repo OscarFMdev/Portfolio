@@ -38,3 +38,12 @@ nav {
   letter-spacing: 0em;
   text-align: left;
 }
+
+.header-banner {
+  width: 100%;
+  height: calc(100vh - 135px);
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
