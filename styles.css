@@ -242,6 +242,7 @@ ul {
   margin: 0 10%;
 }
 
+
 .languages {
   font-family: Poppins, sans-serif;
   font-size: 20px;
@@ -254,3 +255,16 @@ ul {
   font-size: 30px;
 }
 
+.arrow {
+  width: 25px;
+  height: 25px;
+}
+
+.languages-section {
+  margin-bottom: 30px;
+}
+
+.frameworks, .skills {
+  border-bottom: 0.2px solid #dfe1e6;
+  padding-bottom: 20px;
+}
