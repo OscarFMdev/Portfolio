@@ -138,7 +138,7 @@ ul {
   width: 80%;
   background-color: white;
   padding: 10px;
-  padding-top: 50px;
+  padding-top: 10px;
   flex-direction: column;
   border-radius: 16px;
   padding-bottom: 30px;
@@ -147,6 +147,7 @@ ul {
 .text-content {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .project-title {
@@ -164,13 +165,14 @@ ul {
   column-gap: 10px;
 }
 
-.bold {
+#bold {
   font-family: Poppins, sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
+  color: var(--worksBold);
 }
 
 .project-data p {
