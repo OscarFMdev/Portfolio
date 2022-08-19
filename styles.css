@@ -170,7 +170,7 @@ ul {
   column-gap: 10px;
 }
 
-#bold {
+.project-data .bold {
   font-family: Poppins, sans-serif;
   font-size: 13px;
   font-weight: 600;
