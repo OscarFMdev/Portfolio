@@ -285,6 +285,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: 200px;
 }
 
 .frameworks,
@@ -298,6 +299,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: space-around;
+  min-width: 250px;
 }
 
 .language-box {
