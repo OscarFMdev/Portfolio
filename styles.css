@@ -13,11 +13,13 @@
 
 header {
   width: 100%;
-  height: 0px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  align-items: end;
+  margin-top: 0px;
+  align-items: center;
+  position: fixed;
+  background-color: white;
 }
 
 * {
@@ -39,10 +41,13 @@ nav {
   text-align: center;
   color: var(--projectPurple);
   margin-left: 30px;
+  width: 1fr;
 }
 
 .hamburguer {
   color: var(--projectPurple);
+  width: 1fr;
+  
 }
 
 .introduction {
