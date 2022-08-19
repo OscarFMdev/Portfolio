@@ -6,7 +6,8 @@
   --gridBackground: #e5e5e5;
   --liButtonBackground: #ebebff;
   --projectButtonColor: #396DF2;
-
+  --languageBoxColor: #F7F7F9;
+  --pressedButtonColor: #2230D2;
 }
 
 /* GLOBALS */
@@ -26,6 +27,23 @@ header {
   text-decoration: none;
   margin: 0;
   font-family: Poppins, sans-serif;
+}
+
+/* BUTTONS */
+.resume-button:disabled, .project-button:disabled {
+  background-color: white;
+  color: #5E6C84;
+}
+
+.resume-button:hover, .project-button:hover {
+  color: white;
+  background-color: var(--projectPurple);
+}
+
+.resume-button:focus, .project-button:focus {
+  background-color: var(--pressedButtonColor);
+  color: white;
+  font-weight: 700;
 }
 
 /* HEADER SECTION */
@@ -150,6 +168,7 @@ ul {
   padding-bottom: 30px;
 }
 
+
 .text-content {
   display: flex;
   flex-direction: column;
@@ -225,7 +244,8 @@ ul {
   border-radius: 8px;
   color: var(--projectButtonColor);
   background-color: white;
-  border: 0.5px solid var(--projectButtonColor) ;
+  border: 0.5px solid var(--projectButtonColor);
+  transition: 0.6s;
 }
 
 .resume-button {
@@ -235,13 +255,18 @@ ul {
   margin-bottom: 30px;
 }
 
+/* ABOUT MYSELF SECTION */
+
+.about-myself {
+  padding-bottom: 60px;
+}
+
 .languages-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 10%;
 }
-
 
 .languages {
   font-family: Poppins, sans-serif;
@@ -267,4 +292,27 @@ ul {
 .frameworks, .skills {
   border-bottom: 0.2px solid #dfe1e6;
   padding-bottom: 20px;
+}
+
+.languages-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.language-box {
+  display: flex;
+  background-color: var(--languageBoxColor);
+  margin: 10px 10%;
+  align-items: center;
+}
+
+.language-box p {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  margin-left: 10px;
 }
