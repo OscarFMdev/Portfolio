@@ -5,9 +5,9 @@
   --worksLight: #7a869a;
   --gridBackground: #e5e5e5;
   --liButtonBackground: #ebebff;
-  --projectButtonColor: #396DF2;
-  --languageBoxColor: #F7F7F9;
-  --pressedButtonColor: #2230D2;
+  --projectButtonColor: #396df2;
+  --languageBoxColor: #f7f7f9;
+  --pressedButtonColor: #2230d2;
 }
 
 /* GLOBALS */
@@ -17,7 +17,7 @@ header {
   height: 50px;
   display: flex;
   justify-content: space-between;
-  margin-top: 0px;
+  margin-top: 1px;
   align-items: center;
   position: fixed;
   background-color: white;
@@ -27,23 +27,6 @@ header {
   text-decoration: none;
   margin: 0;
   font-family: Poppins, sans-serif;
-}
-
-/* BUTTONS */
-.resume-button:disabled, .project-button:disabled {
-  background-color: white;
-  color: #5E6C84;
-}
-
-.resume-button:hover, .project-button:hover {
-  color: white;
-  background-color: var(--projectPurple);
-}
-
-.resume-button:focus, .project-button:focus {
-  background-color: var(--pressedButtonColor);
-  color: white;
-  font-weight: 700;
 }
 
 /* HEADER SECTION */
@@ -66,7 +49,6 @@ nav {
 .hamburguer {
   color: var(--projectPurple);
   width: 1fr;
-  
 }
 
 .introduction {
@@ -81,7 +63,8 @@ nav {
   min-width: 270px;
 }
 
-.name, .about {
+.name,
+.about {
   padding-top: 70px;
   color: var(--headerColor);
   font-family: Poppins, sans-serif;
@@ -140,7 +123,6 @@ ul {
   padding: 0;
 }
 
-
 /* WORKS SECTION */
 
 .works {
@@ -167,7 +149,6 @@ ul {
   border-radius: 16px;
   padding-bottom: 30px;
 }
-
 
 .text-content {
   display: flex;
@@ -236,6 +217,7 @@ ul {
   margin-top: 20px;
 }
 
+/* BUTTONS */
 .project-button, .resume-button {
   display: inline-block;
   width: 100px;
@@ -255,17 +237,29 @@ ul {
   margin-bottom: 30px;
 }
 
+.resume-button:disabled,
+.project-button:disabled {
+  background-color: white;
+  color: #5e6c84;
+}
+
+.resume-button:hover,
+.project-button:hover {
+  color: white;
+  background-color: var(--projectPurple);
+}
+
+.resume-button:focus,
+.project-button:focus {
+  background-color: var(--pressedButtonColor);
+  color: white;
+  font-weight: 700;
+}
+
 /* ABOUT MYSELF SECTION */
 
 .about-myself {
   padding-bottom: 60px;
-}
-
-.languages-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 10%;
 }
 
 .languages {
@@ -287,9 +281,14 @@ ul {
 
 .languages-section {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%;
 }
 
-.frameworks, .skills {
+.frameworks,
+.skills {
   border-bottom: 0.2px solid #dfe1e6;
   padding-bottom: 20px;
 }
@@ -309,7 +308,7 @@ ul {
 }
 
 .language-box p {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
