@@ -218,7 +218,8 @@ ul {
 }
 
 /* BUTTONS */
-.project-button, .resume-button {
+.project-button,
+.resume-button {
   display: inline-block;
   width: 100px;
   height: 40px;
@@ -280,11 +281,10 @@ ul {
 }
 
 .languages-section {
-  margin-bottom: 30px;
+  margin: 10% 10% 10px 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10%;
 }
 
 .frameworks,
@@ -305,6 +305,7 @@ ul {
   background-color: var(--languageBoxColor);
   margin: 10px 10%;
   align-items: center;
+  border-radius: 10px;
 }
 
 .language-box p {
