@@ -25,6 +25,7 @@ header {
 * {
   text-decoration: none;
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
 /* HEADER SECTION */
@@ -160,7 +161,6 @@ ul {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -175,7 +175,6 @@ ul {
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
   color: var(--worksBold);
 }
@@ -185,7 +184,6 @@ ul {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
   color: var(--worksLight);
   margin-top: 15px;
@@ -204,7 +202,7 @@ ul {
 .li-button {
   background-color: var(--liButtonBackground);
   color: var(--projectPurple);
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -235,5 +233,24 @@ ul {
   margin-top: 10px;
   margin-left: 15px;
   margin-bottom: 30px;
+}
+
+.languages-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.languages {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.languages-section p {
+  font-size: 30px;
 }
 
