@@ -5,6 +5,7 @@
   --worksLight: #7a869a;
   --gridBackground: #e5e5e5;
   --liButtonBackground: #ebebff;
+  --projectButtonColor: #396DF2;
 
 }
 
@@ -125,6 +126,7 @@ ul {
   background-color: var(--gridBackground);
   grid-template-columns: auto;
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .project {
@@ -137,7 +139,7 @@ ul {
   padding-top: 50px;
   flex-direction: column;
   border-radius: 16px;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 
 .text-content {
@@ -187,7 +189,7 @@ ul {
 
 .buttons-flex {
   display: flex;
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 .li-button {
@@ -209,5 +211,12 @@ ul {
 }
 
 .project-button {
-  
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin-top: 40px;
+  border-radius: 8px;
+  color: var(--projectButtonColor);
+  background-color: white;
+  border: 0.5px solid var(--projectButtonColor) ;
 }
