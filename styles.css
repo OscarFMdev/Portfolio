@@ -62,7 +62,7 @@ nav {
   min-width: 270px;
 }
 
-.name {
+.name, .about {
   padding-top: 70px;
   color: var(--headerColor);
   font-family: Poppins, sans-serif;
@@ -219,7 +219,7 @@ ul {
   margin-top: 20px;
 }
 
-.project-button {
+.project-button, .resume-button {
   display: inline-block;
   width: 100px;
   height: 40px;
@@ -228,5 +228,12 @@ ul {
   color: var(--projectButtonColor);
   background-color: white;
   border: 0.5px solid var(--projectButtonColor) ;
+}
+
+.resume-button {
+  width: 120px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 30px;
 }
 
