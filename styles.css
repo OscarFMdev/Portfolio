@@ -54,6 +54,7 @@ nav {
   margin-right: 50px;
   margin-top: 20px;
   margin-left: 20px;
+  min-width: 270px;
 }
 
 .name {
@@ -65,6 +66,7 @@ nav {
   line-height: 52px;
   text-align: left;
   margin-left: 20px;
+  min-width: 330px;
 }
 
 .header-banner {
