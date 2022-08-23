@@ -21,7 +21,6 @@
   background-color: white;
 }
 
-
 * {
   text-decoration: none;
   margin: 0;
@@ -363,7 +362,6 @@ ul {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
   text-align: center;
   height: 60px;
 }
@@ -387,6 +385,7 @@ ul {
 .form-container textarea {
   height: 180px;
 }
+
 .text-input,
 .email-input {
   padding: 10px 0;
