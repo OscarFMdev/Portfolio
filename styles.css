@@ -84,7 +84,7 @@ nav {
 }
 
 .header-banner {
-  width: 100%;
+  width: 90%;
   height: calc(100vh - 100px);
   background-image: url("./images/header-section/background.png");
   background-repeat: no-repeat;
@@ -367,6 +367,8 @@ ul {
   line-height: 28px;
   height: 130px;
   margin-top: 20px;
+  min-width: 300px;
+  max-width: 550px;
 }
 
 .contact-header {
