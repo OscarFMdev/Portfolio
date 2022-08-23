@@ -318,3 +318,11 @@ ul {
   text-align: left;
   margin-left: 10px;
 }
+
+/* FORM */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
