@@ -324,20 +324,44 @@ ul {
 .contact {
   display: flex;
   align-items: center;
+  width: 100%;
   flex-direction: column;
   margin: 0 24px;
+  background-color: var(--projectPurple);
+  border-top-left-radius: 60px;
 }
 
 .contact-header,
-.contact-des {
+.contact-desc {
   text-align: center;
+  color: white;
+  margin: 0 30px;
+}
+
+.contact-desc {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+
+.contact-header {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 20%;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
+}
+
+.form-container textarea {
+  max-width: 327px;
+  min-width: 200px;
+  margin: 0 10%;
 }
