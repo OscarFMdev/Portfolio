@@ -27,6 +27,10 @@
   font-family: Poppins, sans-serif;
 }
 
+body {
+  background-color: var(--gridBackground);
+}
+
 /* HEADER SECTION */
 
 nav {
@@ -72,6 +76,11 @@ nav {
   text-align: left;
   margin-left: 20px;
   min-width: 330px;
+}
+
+.first-section {
+  background-color: white;
+  border-bottom-left-radius: 60px;
 }
 
 .header-banner {
@@ -264,7 +273,9 @@ ul {
 /* ABOUT MYSELF SECTION */
 
 .about-myself {
+  background-color: white;
   padding-bottom: 60px;
+  border-top-left-radius: 60px;
 }
 
 .languages {
