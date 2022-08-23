@@ -21,6 +21,7 @@
   background-color: white;
 }
 
+
 * {
   text-decoration: none;
   margin: 0;
@@ -219,7 +220,8 @@ ul {
 
 /* BUTTONS */
 .project-button,
-.resume-button {
+.resume-button,
+.contact-button {
   display: inline-block;
   width: 100px;
   height: 40px;
@@ -321,14 +323,22 @@ ul {
 
 /* FORM */
 
+.contact-background {
+  background-color: var(--projectPurple);
+  background-size: cover;
+  border-top-left-radius: 60px;
+  padding-top: 20px;
+}
+
 .contact {
   display: flex;
   align-items: center;
   width: 100%;
   flex-direction: column;
-  margin: 0 24px;
-  background-color: var(--projectPurple);
-  border-top-left-radius: 60px;
+  background-image: url('./images/contact-shapes/contact-form-shapes-mobile.svg');
+  padding-top: 100px;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .contact-header,
@@ -342,6 +352,7 @@ ul {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+  height: 130px;
 }
 
 .contact-header {
@@ -350,7 +361,7 @@ ul {
   line-height: 52px;
   letter-spacing: 0em;
   text-align: center;
-  padding-top: 20%;
+  height: 60px;
 }
 
 .form-container {
@@ -358,10 +369,24 @@ ul {
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
+  margin-top: 5%;
 }
 
-.form-container textarea {
-  max-width: 327px;
-  min-width: 200px;
-  margin: 0 10%;
+.form-container textarea,
+.form-container input {
+  width: 80%;
+  margin: 2% 10%;
+  border-radius: 7px;
+  border: none;
+}
+
+.text-input,
+.email-input {
+  padding: 10px 0;
+}
+
+.form-container button {
+  align-self: flex-start;
+  margin-left: 10%;
+  margin-top: 20px;
 }
