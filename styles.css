@@ -321,6 +321,21 @@ ul {
 
 /* FORM */
 
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 24px;
+}
+
+.contact-header,
+.contact-des {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
