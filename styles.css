@@ -241,19 +241,22 @@ ul {
 }
 
 .resume-button:disabled,
-.project-button:disabled {
+.project-button:disabled,
+.contact-button:disabled {
   background-color: white;
   color: #5e6c84;
 }
 
 .resume-button:hover,
-.project-button:hover {
+.project-button:hover,
+.contact-button:hover {
   color: white;
   background-color: var(--projectPurple);
 }
 
 .resume-button:focus,
-.project-button:focus {
+.project-button:focus,
+.contact-button:focus {
   background-color: var(--pressedButtonColor);
   color: white;
   font-weight: 700;
@@ -353,6 +356,7 @@ ul {
   font-size: 20px;
   line-height: 28px;
   height: 130px;
+  margin-top: 20px;
 }
 
 .contact-header {
@@ -369,7 +373,7 @@ ul {
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
-  margin-top: 5%;
+  margin-top: 50px;
 }
 
 .form-container textarea,
@@ -380,6 +384,9 @@ ul {
   border: none;
 }
 
+.form-container textarea {
+  height: 180px;
+}
 .text-input,
 .email-input {
   padding: 10px 0;
@@ -388,5 +395,5 @@ ul {
 .form-container button {
   align-self: flex-start;
   margin-left: 10%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
