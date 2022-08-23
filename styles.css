@@ -79,9 +79,9 @@ nav {
   height: calc(100vh - 100px);
   background-image: url("./images/header-section/background.png");
   background-repeat: no-repeat;
+  border-bottom-left-radius: 300px;
   background-position: center;
   background-size: cover;
-  padding-bottom: 100px;
 }
 
 .connect-text {
@@ -130,7 +130,6 @@ ul {
   justify-content: center;
   align-content: center;
   row-gap: 70px;
-  margin-top: 30px;
   background-color: var(--gridBackground);
   grid-template-columns: auto;
   padding-top: 70px;
