@@ -89,7 +89,6 @@ nav {
   background-image: url("./images/header-section/background.png");
   background-repeat: no-repeat;
   border-bottom-left-radius: 60px;
-  border-collapse: separate; 
   background-position: center;
   background-size: cover;
 }
