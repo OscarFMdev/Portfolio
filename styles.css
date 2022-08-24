@@ -442,7 +442,7 @@ ul {
     background-image: url("./images/header-section/Header-deskbg.svg");
     background-size: contain;
     width: 100%;
-    background-position: 12px center;
+    background-position: center;
     padding-bottom: 70px;
   }
 
@@ -469,11 +469,6 @@ ul {
   margin-top: 30px;
   }
 
-  .introduction {
-    margin-right: 0;
-    padding-right: 800px;
-  }
-
   a img {
     height: 30px;
     width: auto;
@@ -487,11 +482,49 @@ ul {
   /* WORKS */
   .project {
     flex-direction: row;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
+    width: 100%;
   }
 
   .project img {
-    min-width: 425.527px;
+    min-width: 400px;
+    width: 1fr;
   }
 
- }
+  .right-side {
+    order: 1;
+    margin-left: 20px;
+  }
+
+  .text-content {
+    margin-left: 60px;
+    width: 1fr;
+  }
+
+  /*ABOUT MYSELF*/
+  .about-myself {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-myself > * {
+    flex-basis: 100%;
+  }
+
+  .languages-boxes {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 100px;
+  }
+  .language-box {
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 120px;
+    height: 122px;
+    margin-right: 20px;
+  }
+}
