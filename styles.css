@@ -442,10 +442,6 @@ textarea::placeholder {
     padding-top: 10px;
   }
 
-  .first-section {
-  border-bottom-left-radius: 100px;
-  }
-
   .header > * {
     margin: 0 15%;
   }
@@ -457,6 +453,7 @@ textarea::placeholder {
   .first-section {
     width: 100%;
     margin-right: 0;
+    border-bottom-left-radius: 100px;
   }
 
   .header-banner {
@@ -597,7 +594,7 @@ textarea::placeholder {
     margin-right: 35px;
   }
 
-  .resume-button{
+  .resume-button {
     width: 150px;
     font-size: 17px;
   }
@@ -637,7 +634,7 @@ textarea::placeholder {
   .contact-button {
     align-self: center !important;
     margin: 20px 0;
-    margin-left: 0 !important; 
+    margin-left: 0 !important;
   }
 
   .project-button {
