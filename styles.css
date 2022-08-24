@@ -475,6 +475,7 @@ textarea::placeholder {
 
   .header-banner .social-media-icons {
     margin-top: 10px;
+    column-gap: 30px;
   }
 
   .name,
@@ -633,8 +634,14 @@ textarea::placeholder {
     margin-top: 10px;
   }
 
-  .form-container button {
-    align-self: center;
+  .contact-button {
+    align-self: center !important;
     margin: 20px 0;
+    margin-left: 0 !important; 
+  }
+
+  .project-button {
+    width: 120px;
+    font-size: 17px;
   }
 }
