@@ -473,6 +473,10 @@ textarea::placeholder {
     margin: 0 30% 0 27%;
   }
 
+  .header-banner .social-media-icons {
+    margin-top: 10px;
+  }
+
   .name,
   .about {
     font-size: 48px;
