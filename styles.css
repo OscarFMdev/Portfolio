@@ -31,6 +31,10 @@ body {
   background-color: var(--gridBackground);
 }
 
+p {
+  color: var(--worksBold);
+}
+
 /* HEADER SECTION */
 
 nav {
@@ -212,6 +216,7 @@ ul {
 .buttons-flex {
   display: flex;
   column-gap: 10px;
+  margin-left: 0 !important;
 }
 
 .li-button {
@@ -476,13 +481,17 @@ textarea::placeholder {
     margin-top: 30px;
   }
 
+  .social-media-icons {
+    margin-left: 30px;
+  }
+
   a img {
-    height: 30px;
+    height: 20px;
     width: auto;
   }
 
   .linkedin-logo {
-    height: 45px;
+    height: 30px;
     width: auto;
   }
 
