@@ -425,9 +425,20 @@ ul {
 /* DESKTOP VERSION */
 
 @media screen and (min-width: 768px) {
+
+  /* HEADER */
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
   .header-banner {
     background-image: url("./images/header-section/Header-deskbg.svg");
     background-size: cover;
+    padding-bottom: 70px;
   }
 
   .header-banner {
@@ -461,6 +472,17 @@ ul {
   .linkedin-logo {
     height: 45px;
     width: auto;
+  }
+
+  /* WORKS */
+  .project {
+    flex-direction: row;
+    height: 496px;
+width: 1156px;
+left: 0px;
+top: 0px;
+border-radius: 24px;
+
   }
 
  }
