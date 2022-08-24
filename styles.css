@@ -429,7 +429,6 @@ textarea::placeholder {
 /* DESKTOP VERSION */
 
 @media screen and (min-width: 768px) {
-
   /* HEADER */
 
   .header {
