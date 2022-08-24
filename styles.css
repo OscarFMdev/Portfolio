@@ -217,6 +217,7 @@ ul {
   display: flex;
   column-gap: 10px;
   margin-left: 0 !important;
+  flex-wrap: wrap;
 }
 
 .li-button {
@@ -393,6 +394,7 @@ ul {
   line-height: 52px;
   text-align: center;
   height: 60px;
+  min-width: 250px;
 }
 
 .form-container {
@@ -440,6 +442,10 @@ textarea::placeholder {
     padding-top: 10px;
   }
 
+  .first-section {
+  border-bottom-left-radius: 100px;
+  }
+
   .header > * {
     margin: 0 15%;
   }
@@ -479,10 +485,6 @@ textarea::placeholder {
     font-size: 20px;
     line-height: 28px;
     margin-top: 30px;
-  }
-
-  .social-media-icons {
-    margin-left: 30px;
   }
 
   a img {
@@ -529,11 +531,7 @@ textarea::placeholder {
     display: flex;
     flex-direction: row;
     border-top-left-radius: 0;
-    border-top-right-radius: 60px;
-  }
-
-  .about-myself > * {
-    flex-basis: 100%;
+    border-top-right-radius: 100px;
   }
 
   .languages-boxes {
@@ -543,13 +541,18 @@ textarea::placeholder {
     margin-right: 100px;
     flex: 0 0 33%;
     margin-top: 20px;
-    margin-left: 7%;
+    margin-left: 9%;
+  }
+
+  .about-myself .social-media-icons {
+    margin-left: 30px;
+    column-gap: 30px;
   }
 
   .language-box {
     flex-direction: column;
     flex-basis: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin: 0;
     max-width: 120px;
@@ -557,8 +560,12 @@ textarea::placeholder {
     margin-right: 2%;
   }
 
+  .language-box img {
+    margin-left: 15px;
+  }
+
   .language-box > p {
-    margin-left: 0;
+    margin-left: 15px;
   }
 
   .about-first {
@@ -566,6 +573,16 @@ textarea::placeholder {
     flex-direction: column;
     justify-content: center;
     margin-left: 10%;
+    flex-basis: 33%;
+  }
+
+  .about-second {
+    margin-right: 10%;
+    flex-basis: 50%;
+  }
+
+  .about-first .introduction {
+    margin-right: 35px;
   }
 
   .resume-button{
@@ -573,12 +590,12 @@ textarea::placeholder {
     font-size: 17px;
   }
 
-  .skills{
-    margin-top: 25px;
+  .skills {
+    margin-top: 30px;
   }
 
   .frameworks {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   /* FORM */
@@ -593,6 +610,7 @@ textarea::placeholder {
 
   .contact-background {
     height: 100vh;
+    border-top-left-radius: 100px;
   }
 
   .contact-desc {
