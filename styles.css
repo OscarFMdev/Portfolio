@@ -65,6 +65,10 @@ nav {
   min-width: 270px;
 }
 
+.name {
+  max-width: 250px;
+}
+
 .name,
 .about {
   padding-top: 70px;
@@ -93,6 +97,8 @@ nav {
   border-bottom-left-radius: 60px;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .connect-text {
@@ -418,5 +424,37 @@ ul {
     background-image: url("./images/header-section/Header-deskbg.svg");
     background-size: cover;
   }
-  
+
+  .header-banner {
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .header-banner > *{
+    margin: 0 20%;
+  }
+
+  .name {
+  font-size: 48px;
+  line-height: 60px;
+  max-width: 400px;
+  }
+
+  .introduction,
+  .connect-text {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 30px;
+  }
+
+  a img {
+    height: 30px;
+    width: auto;
+  }
+
+  .linkedin-logo {
+    height: 45px;
+    width: auto;
+  }
+
  }
