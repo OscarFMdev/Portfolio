@@ -534,6 +534,7 @@ textarea::placeholder {
     border-top-left-radius: 0;
     border-top-right-radius: 100px;
     padding-bottom: 300px;
+    padding-top: 300px;
   }
 
   .languages-section {
@@ -551,8 +552,8 @@ textarea::placeholder {
   }
 
   .about-myself .social-media-icons {
-    margin-left: 30px;
     column-gap: 30px;
+    margin: 23px 30px;
   }
 
   .language-box {
