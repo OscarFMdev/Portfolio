@@ -421,14 +421,23 @@ ul {
   margin-top: 10px;
 }
 
+input::placeholder,
+textarea::placeholder {
+  padding: 15px 20px;
+}
+
 /* DESKTOP VERSION */
 
 @media screen and (min-width: 768px) {
 
   /* HEADER */
 
+  .header {
+    padding-top: 10px;
+  }
+
   .header > * {
-    margin: 0 7%;
+    margin: 0 15%;
   }
 
   .logo {
@@ -449,21 +458,21 @@ ul {
   }
 
   .header-banner > *{
-    margin: 0 20%;
+    margin: 0 30% 0 27%;
   }
 
   .name,
   .about {
-  font-size: 48px;
-  line-height: 60px;
-  max-width: 400px;
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 400px;
   }
 
   .introduction,
   .connect-text {
-  font-size: 20px;
-  line-height: 28px;
-  margin-top: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 30px;
   }
 
   a img {
@@ -481,11 +490,15 @@ ul {
     flex-direction: row;
     flex: 1 1 auto;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .project img {
     min-width: 400px;
-    width: 1fr;
+    max-width: 544px;
+    width: 50%;
+    margin: 10px;
   }
 
   .right-side {
@@ -494,14 +507,19 @@ ul {
   }
 
   .text-content {
-    margin-left: 60px;
-    width: 1fr;
+    justify-content: flex-start;
+    margin-left: 27px;
+    margin-top: 0;
+    margin-bottom: 100px;
+    width: 50%;
   }
 
   /*ABOUT MYSELF*/
   .about-myself {
     display: flex;
     flex-direction: row;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 60px;
   }
 
   .about-myself > * {
@@ -515,7 +533,9 @@ ul {
     margin-right: 100px;
     flex: 0 0 33%;
     margin-top: 20px;
+    margin-left: 10%;
   }
+
   .language-box {
     flex-direction: column;
     flex-basis: 100%;
@@ -524,8 +544,7 @@ ul {
     margin: 0;
     max-width: 120px;
     height: 122px;
-    margin-right: 20px;
-    margin-left: 10%;
+    margin-right: 2%;
   }
 
   .language-box > p {
@@ -546,9 +565,24 @@ ul {
     width: 100%;
     height: 80vh;
     background-position: center;
+    justify-content: center;
   }
 
   .contact-background {
     height: 100vh;
+  }
+
+  .contact-desc {
+    height: 100px;
+  }
+
+  .form-container {
+    width: 550px;
+    margin-top: 10px;
+  }
+  
+  .form-container button {
+    align-self: center;
+    margin: 20px 0;
   }
 }
