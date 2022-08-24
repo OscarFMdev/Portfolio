@@ -23,7 +23,7 @@
 
 * {
   text-decoration: none;
-  margin: 0;
+  margin: 0px;
   font-family: Poppins, sans-serif;
 }
 
@@ -85,12 +85,10 @@ nav {
 .first-section {
   background-color: white;
   border-bottom-left-radius: 60px;
-  display: flex;
-  flex-shrink: 1;
 }
 
 .header-banner {
-  width: 90%;
+  width: 100%;
   height: calc(100vh - 100px);
   background-image: url("./images/header-section/header-mobile.svg");
   background-repeat: no-repeat;
@@ -208,6 +206,7 @@ ul {
 .project img {
   height: auto;
   width: 100%;
+  min-width: 300px;
 }
 
 .buttons-flex {
@@ -428,16 +427,22 @@ ul {
 
   /* HEADER */
 
-  .header {
-    justify-content: space-around;
+  .header > * {
+    margin: 0 7%;
   }
 
   .logo {
     font-size: 24px;
   }
+  .first-section {
+    width: 100%;
+    margin-right: 0px;
+  }
   .header-banner {
     background-image: url("./images/header-section/Header-deskbg.svg");
-    background-size: cover;
+    background-size: contain;
+    width: 100%;
+    background-position: 12px center;
     padding-bottom: 70px;
   }
 
@@ -464,6 +469,11 @@ ul {
   margin-top: 30px;
   }
 
+  .introduction {
+    margin-right: 0;
+    padding-right: 800px;
+  }
+
   a img {
     height: 30px;
     width: auto;
@@ -477,12 +487,11 @@ ul {
   /* WORKS */
   .project {
     flex-direction: row;
-    height: 496px;
-width: 1156px;
-left: 0px;
-top: 0px;
-border-radius: 24px;
+    flex: 1 0 auto;
+  }
 
+  .project img {
+    min-width: 425.527px;
   }
 
  }
