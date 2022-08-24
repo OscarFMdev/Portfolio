@@ -516,15 +516,32 @@ ul {
     justify-content: flex-start;
     align-items: center;
     margin-right: 100px;
+    flex: 0 0 33%;
+    margin-top: 20px;
   }
   .language-box {
     flex-direction: column;
     flex-basis: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
-    width: 120px;
+    max-width: 120px;
     height: 122px;
     margin-right: 20px;
+    margin-left: 10%;
   }
+
+  .language-box > p {
+    margin-left: 0px;
+  }
+
+  .about-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+  }
+
+  /* FORM */
+  
 }
