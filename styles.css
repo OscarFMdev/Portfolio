@@ -530,8 +530,14 @@ textarea::placeholder {
   .about-myself {
     display: flex;
     flex-direction: row;
+    align-items: center;
     border-top-left-radius: 0;
     border-top-right-radius: 100px;
+    padding-bottom: 300px;
+  }
+
+  .languages-section {
+    margin-top: 50px;
   }
 
   .languages-boxes {
@@ -591,11 +597,11 @@ textarea::placeholder {
   }
 
   .skills {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .frameworks {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   /* FORM */
