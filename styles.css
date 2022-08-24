@@ -568,6 +568,11 @@ textarea::placeholder {
     margin-left: 10%;
   }
 
+  .resume-button{
+    width: 150px;
+    font-size: 17px;
+  }
+
   /* FORM */
   .contact {
     background-image: url("./images/contact-shapes/contact-form-desk@2x.svg");
