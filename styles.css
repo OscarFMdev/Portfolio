@@ -23,7 +23,7 @@
 
 * {
   text-decoration: none;
-  margin: 0px;
+  margin: 0;
   font-family: Poppins, sans-serif;
 }
 
@@ -443,10 +443,12 @@ textarea::placeholder {
   .logo {
     font-size: 24px;
   }
+
   .first-section {
     width: 100%;
-    margin-right: 0px;
+    margin-right: 0;
   }
+
   .header-banner {
     background-image: url("./images/header-section/Header-deskbg.svg");
     background-size: contain;
@@ -457,7 +459,7 @@ textarea::placeholder {
     align-items: baseline;
   }
 
-  .header-banner > *{
+  .header-banner > * {
     margin: 0 30% 0 27%;
   }
 
@@ -514,11 +516,11 @@ textarea::placeholder {
     width: 50%;
   }
 
-  /*ABOUT MYSELF*/
+  /* ABOUT MYSELF */
   .about-myself {
     display: flex;
     flex-direction: row;
-    border-top-left-radius: 0px;
+    border-top-left-radius: 0;
     border-top-right-radius: 60px;
   }
 
@@ -548,7 +550,7 @@ textarea::placeholder {
   }
 
   .language-box > p {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .about-first {
@@ -580,7 +582,7 @@ textarea::placeholder {
     width: 550px;
     margin-top: 10px;
   }
-  
+
   .form-container button {
     align-self: center;
     margin: 20px 0;
