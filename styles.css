@@ -279,6 +279,11 @@ ul {
 
 /* ABOUT MYSELF SECTION */
 
+.about {
+  min-width: 10px;
+  max-width: 250px;
+}
+
 .about-myself {
   background-color: white;
   padding-bottom: 60px;
@@ -434,7 +439,8 @@ ul {
     margin: 0 20%;
   }
 
-  .name {
+  .name,
+  .about {
   font-size: 48px;
   line-height: 60px;
   max-width: 400px;
