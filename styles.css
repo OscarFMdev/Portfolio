@@ -444,9 +444,6 @@ ul {
     width: 100%;
     background-position: center;
     padding-bottom: 70px;
-  }
-
-  .header-banner {
     justify-content: center;
     align-items: baseline;
   }
@@ -543,5 +540,15 @@ ul {
   }
 
   /* FORM */
-  
+  .contact {
+    background-image: url("./images/contact-shapes/contact-form-desk@2x.svg");
+    background-size: contain;
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+  }
+
+  .contact-background {
+    height: 100vh;
+  }
 }
