@@ -81,12 +81,14 @@ nav {
 .first-section {
   background-color: white;
   border-bottom-left-radius: 60px;
+  display: flex;
+  flex-shrink: 1;
 }
 
 .header-banner {
   width: 90%;
   height: calc(100vh - 100px);
-  background-image: url("./images/header-section/background.png");
+  background-image: url("./images/header-section/header-mobile.svg");
   background-repeat: no-repeat;
   border-bottom-left-radius: 60px;
   background-position: center;
@@ -408,3 +410,13 @@ ul {
   margin-left: 10%;
   margin-top: 10px;
 }
+
+/* DESKTOP VERSION */
+
+@media screen and (min-width: 768px) {
+  .header-banner {
+    background-image: url("./images/header-section/Header-deskbg.svg");
+    background-size: cover;
+  }
+  
+ }
