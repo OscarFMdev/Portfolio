@@ -3,7 +3,7 @@
   --headerColor: #172b4d;
   --worksBold: #344563;
   --worksLight: #7a869a;
-  --gridBackground: #e5e5e5;
+  --gridBackground: #f7f7f9;
   --liButtonBackground: #ebebff;
   --projectButtonColor: #396df2;
   --languageBoxColor: #f7f7f9;
@@ -25,6 +25,10 @@
   text-decoration: none;
   margin: 0;
   font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: var(--gridBackground);
 }
 
 /* HEADER SECTION */
@@ -74,14 +78,19 @@ nav {
   min-width: 330px;
 }
 
+.first-section {
+  background-color: white;
+  border-bottom-left-radius: 60px;
+}
+
 .header-banner {
-  width: 100%;
+  width: 90%;
   height: calc(100vh - 100px);
   background-image: url("./images/header-section/background.png");
   background-repeat: no-repeat;
+  border-bottom-left-radius: 60px;
   background-position: center;
   background-size: cover;
-  padding-bottom: 100px;
 }
 
 .connect-text {
@@ -130,7 +139,6 @@ ul {
   justify-content: center;
   align-content: center;
   row-gap: 70px;
-  margin-top: 30px;
   background-color: var(--gridBackground);
   grid-template-columns: auto;
   padding-top: 70px;
@@ -264,7 +272,9 @@ ul {
 /* ABOUT MYSELF SECTION */
 
 .about-myself {
+  background-color: white;
   padding-bottom: 60px;
+  border-top-left-radius: 60px;
 }
 
 .languages {
@@ -356,6 +366,8 @@ ul {
   line-height: 28px;
   height: 130px;
   margin-top: 20px;
+  min-width: 300px;
+  max-width: 550px;
 }
 
 .contact-header {
