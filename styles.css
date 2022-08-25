@@ -29,6 +29,7 @@
 
 body {
   background-color: var(--gridBackground);
+  padding: 0 !important;
 }
 
 p {
