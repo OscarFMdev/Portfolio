@@ -88,6 +88,8 @@ nav {
 
 .name {
   max-width: 250px;
+  animation-duration: 1s;
+  animation-name: grow;
 }
 
 .name,
@@ -118,6 +120,15 @@ nav {
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .connect-text {
