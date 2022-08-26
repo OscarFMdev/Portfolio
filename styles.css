@@ -165,6 +165,21 @@ nav {
   width: auto;
 }
 
+.social-media-icons img {
+  align-self: center;
+  transition: 1s;
+}
+
+.linkedin-logo {
+  height: 30px;
+  width: auto;
+  transition: 1s;
+}
+
+.social-media-icons img:hover {
+  transform: scale(2);
+}
+
 ul {
   list-style: none;
   padding: 0;
