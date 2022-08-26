@@ -92,6 +92,15 @@ nav {
   animation-name: grow;
 }
 
+span {
+  transition: 1s;
+}
+
+span:hover {
+  font-size: larger;
+  color: var(--projectPurple);
+}
+
 .name,
 .about {
   padding-top: 70px;
