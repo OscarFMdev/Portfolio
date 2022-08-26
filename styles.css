@@ -577,7 +577,7 @@ textarea::placeholder {
     border-top-left-radius: 0;
     border-top-right-radius: 100px;
     padding-bottom: 300px;
-    padding-top: 300px;
+    padding-top: 200px;
   }
 
   .languages-section {
@@ -659,7 +659,8 @@ textarea::placeholder {
   }
 
   .contact-background {
-    height: 100vh;
+    height: 80vh;
+    padding-bottom: 100px;
     border-top-left-radius: 100px;
   }
 
