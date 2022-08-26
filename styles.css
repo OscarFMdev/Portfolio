@@ -452,6 +452,7 @@ textarea::placeholder {
 
   .header {
     padding-top: 10px;
+    position: fixed !important;
   }
 
   .hamburguer {
