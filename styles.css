@@ -181,26 +181,14 @@ span:hover {
 
 .social-media-icons img {
   align-self: center;
-}
-
-.linkedin-logo {
-  height: 30px;
-  width: auto;
-}
-
-.social-media-icons img {
-  align-self: center;
   transition: 1s;
+
 }
 
 .linkedin-logo {
   height: 30px;
   width: auto;
   transition: 1s;
-}
-
-.social-media-icons img:hover {
-  transform: scale(2);
 }
 
 ul {
@@ -497,6 +485,10 @@ ul {
 input::placeholder,
 textarea::placeholder {
   padding: 15px 20px;
+}
+
+.social-media-icons img:hover {
+  transform: scale(2);
 }
 
 /* DESKTOP VERSION */
