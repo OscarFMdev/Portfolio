@@ -156,7 +156,7 @@ ul {
 
 /* WORKS SECTION */
 
-.works {
+#works {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -301,7 +301,7 @@ ul {
   max-width: 250px;
 }
 
-.about-myself {
+#about {
   background-color: white;
   padding-bottom: 60px;
   border-top-left-radius: 60px;
@@ -372,7 +372,7 @@ ul {
   padding-top: 20px;
 }
 
-.contact {
+#contact {
   display: flex;
   align-items: center;
   width: 100%;
@@ -569,7 +569,7 @@ textarea::placeholder {
   }
 
   /* ABOUT MYSELF */
-  .about-myself {
+  #about {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -593,7 +593,7 @@ textarea::placeholder {
     margin-left: 9%;
   }
 
-  .about-myself .social-media-icons {
+  #about .social-media-icons {
     column-gap: 30px;
     margin: 23px 30px;
   }
@@ -648,7 +648,7 @@ textarea::placeholder {
   }
 
   /* FORM */
-  .contact {
+  #contact {
     background-image: url("./images/contact-shapes/contact-form-desk@2x.svg");
     background-size: contain;
     width: 100%;
