@@ -149,6 +149,7 @@ span:hover {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
@@ -182,7 +183,6 @@ span:hover {
 .social-media-icons img {
   align-self: center;
   transition: 1s;
-
 }
 
 .linkedin-logo {
