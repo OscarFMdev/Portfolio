@@ -62,6 +62,20 @@ nav {
   margin-left: 30px;
   width: 1fr;
   min-width: 75.45px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .logo:hover {
@@ -88,6 +102,17 @@ nav {
 
 .name {
   max-width: 250px;
+  animation-duration: 1s;
+  animation-name: grow;
+}
+
+span {
+  transition: 1s;
+}
+
+span:hover {
+  font-size: larger;
+  color: var(--projectPurple);
 }
 
 .name,
@@ -120,6 +145,16 @@ nav {
   flex-direction: column;
 }
 
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 .connect-text {
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -147,11 +182,13 @@ nav {
 
 .social-media-icons img {
   align-self: center;
+  transition: 1s;
 }
 
 .linkedin-logo {
   height: 30px;
   width: auto;
+  transition: 1s;
 }
 
 ul {
@@ -448,6 +485,10 @@ ul {
 input::placeholder,
 textarea::placeholder {
   padding: 15px 20px;
+}
+
+.social-media-icons img:hover {
+  transform: scale(2);
 }
 
 /* DESKTOP VERSION */
