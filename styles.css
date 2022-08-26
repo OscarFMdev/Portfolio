@@ -27,6 +27,11 @@
   font-family: Poppins, sans-serif;
 }
 
+*:hover,
+*:visited {
+  text-decoration: none !important;
+}
+
 body {
   background-color: var(--gridBackground);
   padding: 0 !important;
