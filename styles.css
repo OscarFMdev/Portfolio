@@ -552,7 +552,7 @@ textarea::placeholder {
     background-size: contain;
     width: 100%;
     background-position: center;
-    padding-bottom: 70px;
+    height: 100vh;
     justify-content: center;
     align-items: baseline;
   }
