@@ -544,7 +544,7 @@ textarea::placeholder {
   .first-section {
     width: 100%;
     margin-right: 0;
-    border-bottom-left-radius: 100px;
+    border-bottom-left-radius: 100px !important;
   }
 
   .header-banner {
@@ -630,7 +630,7 @@ textarea::placeholder {
     flex-direction: row;
     align-items: center;
     border-top-left-radius: 0;
-    border-top-right-radius: 100px;
+    border-top-right-radius: 100px !important;
     padding-bottom: 300px;
     padding-top: 200px;
   }
