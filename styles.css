@@ -48,6 +48,10 @@ nav {
   display: flex;
 }
 
+.menu-options {
+  min-width: 266px;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -61,21 +65,7 @@ nav {
   color: var(--projectPurple);
   margin-left: 30px;
   width: 1fr;
-  min-width: 75.45px;
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+  min-width: 76px;
 }
 
 .logo:hover {
@@ -104,15 +94,6 @@ nav {
   max-width: 250px;
   animation-duration: 1s;
   animation-name: grow;
-}
-
-span {
-  transition: 1s;
-}
-
-span:hover {
-  font-size: larger;
-  color: var(--projectPurple);
 }
 
 .name,
@@ -535,6 +516,29 @@ textarea::placeholder {
   .logo {
     font-size: 24px;
     min-width: 100.6px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  span {
+    transition: 1s;
+  }
+  
+  span:hover {
+    font-size: larger;
+    color: var(--projectPurple);
   }
 
   .first-section {
