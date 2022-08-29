@@ -619,6 +619,11 @@ textarea::placeholder {
     width: 50%;
   }
 
+  .project:hover .project-button {
+    color: white;
+    background-color: var(--projectPurple);
+  }
+
   /* ABOUT MYSELF */
   #about {
     display: flex;
