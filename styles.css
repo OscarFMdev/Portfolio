@@ -19,6 +19,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  box-shadow: 0px 14px 45px -4px rgba(0,0,0,0.17);
+  -webkit-box-shadow: 0px 14px 45px -4px rgba(0,0,0,0.17);
+  -moz-box-shadow: 0px 14px 45px -4px rgba(0,0,0,0.17);
 }
 
 * {
@@ -192,6 +195,7 @@ ul {
 }
 
 .project {
+  border: 1px solid white;
   display: flex;
   align-items: center;
   margin-left: 7%;
@@ -202,6 +206,11 @@ ul {
   flex-direction: column;
   border-radius: 16px;
   padding-bottom: 30px;
+  transition: 1s ease;
+  transition-delay: 0.5s;
+  box-shadow: 1px 1px 55px -23px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 1px 55px -23px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 55px -23px rgba(0,0,0,0.75);
 }
 
 .text-content {
@@ -247,6 +256,10 @@ ul {
   height: auto;
   width: 100%;
   min-width: 300px;
+}
+
+.project:hover {
+  border: 1px solid var(--projectPurple);
 }
 
 .buttons-flex {
