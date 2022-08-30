@@ -50,6 +50,7 @@ nav {
 
 .menu-options {
   min-width: 266px;
+  margin: 0 !important;
 }
 
 .desktop-menu {
