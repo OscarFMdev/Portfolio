@@ -48,11 +48,10 @@ p {
 
 nav {
   margin-right: 32px;
-  display: flex;
+  display: flex !important;
 }
 
 .menu-options {
-  min-width: 266px;
   margin: 0 !important;
 }
 
