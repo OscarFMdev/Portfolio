@@ -51,9 +51,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Oscar Fernández Muñoz**
 
-- GitHub: [@OscarFM-dev](https://github.com/OscarFM-dev)
+- GitHub: [@OscarFM-dev](https://github.com/OscarFMdev)
 - Twitter: [@OscarFMdev](https://twitter.com/OscarFMdev)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/OscarFM-dev)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/OscarFMdev)
 
 
 <!-- ## 🤝 Contributing
