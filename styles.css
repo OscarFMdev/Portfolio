@@ -548,7 +548,7 @@ textarea::placeholder {
   span {
     transition: 1s;
   }
-  
+
   span:hover {
     font-size: larger;
     color: var(--projectPurple);
@@ -631,6 +631,7 @@ textarea::placeholder {
     margin-bottom: 100px;
     width: 50%;
   }
+
   .project-button {
     width: 120px;
     font-size: 17px;
@@ -750,5 +751,4 @@ textarea::placeholder {
     margin: 20px 0;
     margin-left: 0 !important;
   }
-
 }
