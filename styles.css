@@ -85,6 +85,11 @@ nav {
   opacity: 0.9;
 }
 
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
 .openMenu {
   z-index: 1000;
 }
