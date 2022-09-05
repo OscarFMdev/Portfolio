@@ -14,17 +14,17 @@ openMenu.addEventListener("click", () => {
   }
 });
 
-window.addEventListener('resize', () => {
-    if(window.innerWidth < 768) {
-      menuOptions.classList.remove("open");
-      openMenu.classList.remove("fa-close", "text-white");
-    }
-})
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 768) {
+    menuOptions.classList.remove("open");
+    openMenu.classList.remove("fa-close", "text-white");
+  } else {
+    menuOptions.style.height = "auto";
+  }
+});
 
 menuOptions.addEventListener("click", () => {
   openMenu.classList.remove("fa-close", "text-white");
   menuOptions.classList.remove("open");
   openMenu.classList.add("fa-bars");
-})
-
-
+});
