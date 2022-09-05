@@ -28,6 +28,7 @@ html {
 }
 
 * {
+  box-sizing: border-box;
   text-decoration: none;
   margin: 0;
   font-family: Poppins, sans-serif;
@@ -60,14 +61,20 @@ nav {
 }
 
 .open {
-  position: absolute;
+  padding-left: 30px;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  height: 0%;
+  overflow: hidden;
   background-color: #396df2;
   opacity: 0.9;
-  padding-block: 100px;
-  padding-left: 30px;
+  
+}
+
+.open li:first-child {
+  margin-top: 100px;
 }
 
 .open li a {
