@@ -11,6 +11,9 @@
 }
 
 /* GLOBALS */
+html {
+  scroll-behavior: smooth;
+}
 
 .header {
   width: 100%;
@@ -53,10 +56,26 @@ nav {
 
 .menu-options {
   margin: 0 !important;
+  display: block;
 }
 
-.desktop-menu {
-  display: none;
+.open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #396df2;
+  opacity: 0.9;
+  padding-block: 100px;
+  padding-left: 30px;
+}
+
+.open li a {
+  display: inline-block;
+  font-size: 32px;
+  color: white;
+  font-weight: 500;
+  padding-block: 20px;
 }
 
 .logo {
@@ -413,7 +432,7 @@ ul {
   align-items: center;
   width: 100%;
   flex-direction: column;
-  background-image: url('./images/contact-shapes/contact-form-shapes-mobile.svg');
+  background-image: url("./images/contact-shapes/contact-form-shapes-mobile.svg");
   padding-top: 100px;
   background-position: right;
   background-repeat: no-repeat;
@@ -601,7 +620,7 @@ textarea::placeholder {
 
   .linkedin-logo {
     height: 30px;
-    color: #505F79;
+    color: #505f79;
     width: auto;
   }
 
