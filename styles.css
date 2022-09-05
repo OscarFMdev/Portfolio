@@ -65,6 +65,13 @@ nav {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+  display: block !important;
+  margin-right: 10px;
+  width: 100px;
+}
+
 .open {
   display: block;
   padding-left: 30px;
@@ -190,6 +197,9 @@ nav {
 .header-flex {
   display: flex;
   flex-direction: column;
+}
+.social-media-icons > * {
+  transform: scale(.75);
 }
 
 .header-banner .social-media-icons {

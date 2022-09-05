@@ -6,10 +6,10 @@ openMenu.addEventListener('click', () => {
   if (menuOptions.classList.contains('open')) {
     menuOptions.style.height = '100vh';
     openMenu.classList.remove('fa-bars');
-    openMenu.classList.add('fa-close', 'text-white', 'fa-2x');
+    openMenu.classList.add('fa-close', 'text-white', 'fa-2x', 'fixed');
   } else {
     menuOptions.style.height = '0';
-    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x');
+    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
     openMenu.classList.add('fa-bars');
   }
 });
