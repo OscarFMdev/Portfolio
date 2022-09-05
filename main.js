@@ -6,10 +6,10 @@ openMenu.addEventListener('click', () => {
   if (menuOptions.classList.contains('open')) {
     menuOptions.style.height = '100vh';
     openMenu.classList.remove('fa-bars');
-    openMenu.classList.add('fa-close', 'text-white');
+    openMenu.classList.add('fa-close', 'text-white', 'fa-2x');
   } else {
     menuOptions.style.height = '0';
-    openMenu.classList.remove('fa-close', 'text-white');
+    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x');
     openMenu.classList.add('fa-bars');
   }
 });
@@ -17,7 +17,8 @@ openMenu.addEventListener('click', () => {
 window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
     menuOptions.classList.remove('open');
-    openMenu.classList.remove('fa-close', 'text-white');
+    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x');
+    openMenu.classList.add('fa-bars')
   } else {
     menuOptions.style.height = 'auto';
   }
