@@ -25,7 +25,7 @@ window.addEventListener('resize', () => {
 });
 
 menuOptions.addEventListener('click', () => {
-  openMenu.classList.remove('fa-close', 'text-white');
+  openMenu.classList.remove('fa-close', 'text-white', 'fa-2x');
   menuOptions.classList.remove('open');
   openMenu.classList.add('fa-bars');
 });

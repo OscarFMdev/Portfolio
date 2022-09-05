@@ -730,7 +730,7 @@ textarea::placeholder {
   }
 
   #about .social-media-icons {
-    column-gap: 30px;
+    column-gap: 25px;
     margin: 23px 30px;
   }
 
