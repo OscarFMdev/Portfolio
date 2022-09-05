@@ -19,3 +19,7 @@ window.addEventListener('resize', () => {
         menuOptions.classList.remove("open");
     }
 })
+
+menuOptions.addEventListener("click", () => {
+  menuOptions.classList.remove("open");
+})
