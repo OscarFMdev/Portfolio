@@ -16,10 +16,15 @@ openMenu.addEventListener("click", () => {
 
 window.addEventListener('resize', () => {
     if(window.innerWidth < 768) {
-        menuOptions.classList.remove("open");
+      menuOptions.classList.remove("open");
+      openMenu.classList.remove("fa-close", "text-white");
     }
 })
 
 menuOptions.addEventListener("click", () => {
+  openMenu.classList.remove("fa-close", "text-white");
   menuOptions.classList.remove("open");
+  openMenu.classList.add("fa-bars");
 })
+
+
