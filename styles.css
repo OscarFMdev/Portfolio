@@ -83,7 +83,6 @@ nav {
   overflow: hidden;
   background-color: #396df2;
   opacity: 0.9;
-  
 }
 
 .openMenu {
@@ -110,7 +109,6 @@ nav {
   text-align: center;
   color: var(--projectPurple);
   margin-left: 30px;
-  width: 1fr;
   min-width: 76px;
 }
 
@@ -121,7 +119,6 @@ nav {
 
 .hamburger {
   color: var(--projectPurple);
-  width: 1fr;
 }
 
 .introduction {
@@ -198,12 +195,9 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.social-media-icons > * {
-  transform: scale(.75);
-}
 
-.header-banner .social-media-icons {
-  margin-bottom: 25%;
+.social-media-icons > * {
+  transform: scale(0.75);
 }
 
 .social-media-icons {
@@ -220,6 +214,12 @@ nav {
   height: 27px;
   width: auto;
   transition: 1s;
+}
+
+.header-banner .social-media-icons {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-bottom: 25%;
 }
 
 .linkedin-logo {
@@ -431,7 +431,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-around;
   min-width: 250px;
 }
 
@@ -630,14 +629,12 @@ textarea::placeholder {
     align-items: baseline;
   }
 
-  .header-banner > * {
-    margin: 0 30% 0 27%;
+  .header-banner .social-media-icons {
+    margin-bottom: 0;
   }
 
-  .header-banner .social-media-icons {
-    margin-top: 10px;
-    column-gap: 30px;
-    margin-bottom: 0;
+  .header-banner > * {
+    margin: 0 30% 0 27%;
   }
 
   .name,
@@ -788,13 +785,13 @@ textarea::placeholder {
     background-image: url("./images/contact-shapes/contact-form-desk@2x.svg");
     background-size: contain;
     width: 100%;
-    height: calc(100vh -50px);
+    height: calc(100vh - 175px);
     background-position: center;
     justify-content: center;
   }
 
   .contact-background {
-    height: calc(100vh -50px);
+    height: calc(100vh - 50px);
     padding-bottom: 100px;
     border-top-left-radius: 100px;
   }

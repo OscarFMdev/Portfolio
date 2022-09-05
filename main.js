@@ -18,7 +18,7 @@ window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
     menuOptions.classList.remove('open');
     openMenu.classList.remove('fa-close', 'text-white', 'fa-2x');
-    openMenu.classList.add('fa-bars')
+    openMenu.classList.add('fa-bars');
   } else {
     menuOptions.style.height = 'auto';
   }
