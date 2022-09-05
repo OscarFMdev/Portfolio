@@ -17,7 +17,7 @@ openMenu.addEventListener('click', () => {
 window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
     menuOptions.classList.remove('open');
-    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x');
+    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
     openMenu.classList.add('fa-bars');
   } else {
     menuOptions.style.height = 'auto';
@@ -25,7 +25,7 @@ window.addEventListener('resize', () => {
 });
 
 menuOptions.addEventListener('click', () => {
-  openMenu.classList.remove('fa-close', 'text-white', 'fa-2x');
+  openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
   menuOptions.classList.remove('open');
   openMenu.classList.add('fa-bars');
 });
