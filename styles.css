@@ -170,7 +170,7 @@ nav {
 }
 
 .linkedin-logo {
-  height: 30px;
+  height: 100px;
   width: auto;
   transition: 1s;
 }
@@ -481,7 +481,8 @@ textarea::placeholder {
   padding: 15px 20px;
 }
 
-.social-media-icons img:hover {
+.social-media-icons img:hover,
+.social-media-icons i:hover {
   transform: scale(2);
 }
 
@@ -600,6 +601,7 @@ textarea::placeholder {
 
   .linkedin-logo {
     height: 30px;
+    color: #505F79;
     width: auto;
   }
 
