@@ -76,7 +76,7 @@ nav {
   color: var(--projectPurple);
 }
 
-.hamburguer {
+.hamburger {
   color: var(--projectPurple);
   width: 1fr;
 }
@@ -495,7 +495,7 @@ textarea::placeholder {
     position: fixed !important;
   }
 
-  .hamburguer {
+  .hamburger {
     display: none !important;
   }
 
