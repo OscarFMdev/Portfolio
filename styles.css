@@ -818,39 +818,75 @@ textarea::placeholder {
 }
 
 /* Modal styles */
-
-.modal {
+.modal-container {
   position: fixed;
-  background-color: #172b4d;
-  width: 1000px;
   inset: 0;
-  z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
+  background-color: rgba(128, 128, 128, 0.9);
 }
 
 .modal-box {
-
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.header-modal-flex {
+.modal-dialog {
+  display: inline-block;
+  width: 100%;
+  max-width: min(600px,90%);
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.modal-desc-flex {
-  display: flex;
+.img-container img {
+  display: block;
+  width: 80%;
+  margin-inline: auto;
 }
 
-.modal-buttons {
+.description {
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
 }
 
+.sourc-box {
+  padding-block: 16px;
+  display: flex;
+  
+}
+
+.btn-modal {
+  font-size: 12px;
+  border: 1px solid #2230d2;
+  color: #2230d2;
+  padding: 8px 8px;
+  border-radius: 8px ;
+  flex: 1;
+}
+.btn-modal:last-child {
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 40em) {
+  .description {
+    flex-direction: row;
+  }
+  .desc {
+    flex: 60%;
+    padding: 16px;
+  }
+
+  .btn-modal {
+    flex: auto;
+  }
+}
