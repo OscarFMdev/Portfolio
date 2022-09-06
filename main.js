@@ -57,6 +57,8 @@ function cardConstruct(title,
     let picture = projects[project].querySelector("img").src;
     let description = projects[project].querySelector(".project-description").innerText;
     let technologies = projects[project].querySelector(".buttons-flex").innerText;
+    let liveURL = 'https://oscarfmdev.github.io/PortfolioProject/';
+    let sourceURL = 'https://github.com/OscarFMdev/PortfolioProject';
 
   }
 
