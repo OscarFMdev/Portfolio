@@ -29,3 +29,34 @@ menuOptions.addEventListener('click', () => {
   menuOptions.classList.remove('open');
   openMenu.classList.add('fa-bars');
 });
+
+function cardConstruct(title,
+  timeline,
+  picture,
+  description,
+  technologies,
+  liveURL,
+  sourceURL) {
+    this.title = title,
+    this.timeline = timeline,
+    this.picture = picture,
+    this.description = description,
+    this.technologies = technologies,
+    this.liveURL = liveURL,
+    this.sourceURL = sourceURL
+  } 
+
+
+  const projects = document.querySelectorAll('.project');
+
+  for( let project = 0; project < projects.length; project++ ) {
+    console.log(projects[project].querySelector(".buttons-flex").innerText);
+
+    let title = projects[project].querySelector(".project-title").innerText;
+    let timeline = projects[project].querySelector(".project-data").innerText;
+    let picture = projects[project].querySelector("img").src;
+    let description = projects[project].querySelector(".project-description").innerText;
+    let technologies = projects[project].querySelector(".buttons-flex").innerText;
+
+  }
+

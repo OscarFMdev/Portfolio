@@ -819,8 +819,38 @@ textarea::placeholder {
 
 /* Modal styles */
 
+.modal {
+  position: fixed;
+  background-color: #172b4d;
+  width: 1000px;
+  inset: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+.modal-box {
+
+}
+
 .header-modal-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.modal-desc-flex {
+  display: flex;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
