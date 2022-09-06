@@ -836,7 +836,7 @@ textarea::placeholder {
 .modal-dialog {
   display: inline-block;
   width: 100%;
-  max-width: min(600px,90%);
+  max-width: min(1000px,90%);
   background-color: white;
   padding: 16px;
   border-radius: 8px;
@@ -863,17 +863,20 @@ textarea::placeholder {
 .sourc-box {
   padding-block: 16px;
   display: flex;
-  
+  width: 230px;
 }
 
 .btn-modal {
   font-size: 12px;
   border: 1px solid #2230d2;
   color: #2230d2;
-  padding: 8px 8px;
+  padding: 8px 0px 8px 0px;
   border-radius: 8px ;
   flex: 1;
+  display: flex;
+  align-items: center;
 }
+
 .btn-modal:last-child {
   margin-left: 8px;
 }
