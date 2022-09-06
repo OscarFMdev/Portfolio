@@ -866,15 +866,21 @@ textarea::placeholder {
   width: 230px;
 }
 
+.modal-container .tech {
+  border-bottom: 0.2px solid rgb(94, 94, 94, 0.2);
+  padding-bottom: 15px;
+}
+
 .btn-modal {
   font-size: 12px;
   border: 1px solid #2230d2;
   color: #2230d2;
-  padding: 8px 0px 8px 0px;
+  padding: 12px 3px 12px 3px;
   border-radius: 8px ;
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .btn-modal:last-child {
@@ -890,6 +896,11 @@ textarea::placeholder {
     padding: 16px 20px 70px;
   }
 
+  .sourc-box {
+    width: 350px;
+    margin-top: 10px;
+  }
+
   .btn-modal {
     flex: auto;
     font-family: Poppins, sans-serif;
@@ -897,5 +908,12 @@ textarea::placeholder {
     font-weight: 500;
     line-height: 20px;
     text-align: center;
+  }
+
+  .live,
+  .source {
+    width: 60px;
+    justify-content: center;
+    gap: 20px;
   }
 }
