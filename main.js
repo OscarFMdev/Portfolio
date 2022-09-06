@@ -1,44 +1,44 @@
-const openMenu = document.querySelector(".hamburger");
-const menuOptions = document.querySelector(".menu-options");
-openMenu.addEventListener("click", () => {
-  menuOptions.classList.toggle("open");
+const openMenu = document.querySelector('.hamburger');
+const menuOptions = document.querySelector('.menu-options');
+openMenu.addEventListener('click', () => {
+  menuOptions.classList.toggle('open');
 
-  if (menuOptions.classList.contains("open")) {
-    menuOptions.style.height = "100vh";
-    openMenu.classList.remove("fa-bars");
-    openMenu.classList.add("fa-close", "text-white", "fa-2x", "fixed");
+  if (menuOptions.classList.contains('open')) {
+    menuOptions.style.height = '100vh';
+    openMenu.classList.remove('fa-bars');
+    openMenu.classList.add('fa-close', 'text-white', 'fa-2x', 'fixed');
   } else {
-    menuOptions.style.height = "0";
-    openMenu.classList.remove("fa-close", "text-white", "fa-2x", "fixed");
-    openMenu.classList.add("fa-bars");
+    menuOptions.style.height = '0';
+    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
+    openMenu.classList.add('fa-bars');
   }
 });
 
-window.addEventListener("resize", () => {
+window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
-    menuOptions.classList.remove("open");
-    openMenu.classList.remove("fa-close", "text-white", "fa-2x", "fixed");
-    openMenu.classList.add("fa-bars");
+    menuOptions.classList.remove('open');
+    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
+    openMenu.classList.add('fa-bars');
   } else {
-    menuOptions.style.height = "auto";
+    menuOptions.style.height = 'auto';
   }
 });
 
-menuOptions.addEventListener("click", () => {
-  openMenu.classList.remove("fa-close", "text-white", "fa-2x", "fixed");
-  menuOptions.classList.remove("open");
-  openMenu.classList.add("fa-bars");
+menuOptions.addEventListener('click', () => {
+  openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
+  menuOptions.classList.remove('open');
+  openMenu.classList.add('fa-bars');
 });
 
 const objectContainer = [];
-function cardConstruct(
+function CardConstruct(
   title,
   timeline,
   picture,
   description,
   technologies,
   liveURL,
-  sourceURL
+  sourceURL,
 ) {
   this.title = title;
   this.timeline = timeline;
@@ -49,36 +49,36 @@ function cardConstruct(
   this.sourceURL = sourceURL;
 }
 
-const projects = document.querySelectorAll(".project");
+const projects = document.querySelectorAll('.project');
 
-for (let project = 0; project < projects.length; project++) {
-  let title = projects[project].querySelector(".project-title").innerText;
-  let timeline = projects[project].querySelector(".project-data").innerHTML;
-  let picture = projects[project].querySelector("img").src;
-  let description = projects[project].querySelector(".project-description").innerText;
-  let technologies = projects[project].querySelector(".buttons-flex").innerHTML;
-  let liveURL = "https://oscarfmdev.github.io/PortfolioProject/";
-  let sourceURL = "https://github.com/OscarFMdev/PortfolioProject";
+for (let project = 0; project < projects.length; project += 1) {
+  const title = projects[project].querySelector('.project-title').innerText;
+  const timeline = projects[project].querySelector('.project-data').innerHTML;
+  const picture = projects[project].querySelector('img').src;
+  const description = projects[project].querySelector('.project-description').innerText;
+  const technologies = projects[project].querySelector('.buttons-flex').innerHTML;
+  const liveURL = 'https://oscarfmdev.github.io/PortfolioProject/';
+  const sourceURL = 'https://github.com/OscarFMdev/PortfolioProject';
   objectContainer.push(
-    new cardConstruct(
+    new CardConstruct(
       title,
       timeline,
       picture,
       description,
       technologies,
       liveURL,
-      sourceURL
-    )
+      sourceURL,
+    ),
   );
 }
 
-const modalButton = document.querySelectorAll(".project-button");
-const modal = document.querySelector(".modal-container");
-const closeModal = document.querySelector(".close-modal");
-for (let index = 0; index < modalButton.length; index++) {
-  modalButton[index].setAttribute("data-index", index);
-  modalButton[index].addEventListener("click", (e) => {
-    let pos = e.target.getAttribute("data-index");
+const modalButton = document.querySelectorAll('.project-button');
+const modal = document.querySelector('.modal-container');
+const closeModal = document.querySelector('.close-modal');
+for (let index = 0; index < modalButton.length; index += 1) {
+  modalButton[index].setAttribute('data-index', index);
+  modalButton[index].addEventListener('click', (e) => {
+    const pos = e.target.getAttribute('data-index');
     modal.querySelector('.modal-title').innerHTML = objectContainer[pos].title;
     modal.querySelector('.project-data').innerHTML = objectContainer[pos].timeline;
     modal.querySelector('.img-container img').src = objectContainer[pos].picture;
@@ -86,10 +86,10 @@ for (let index = 0; index < modalButton.length; index++) {
     modal.querySelector('.buttons-flex').innerHTML = objectContainer[pos].technologies;
     modal.querySelector('.live').href = objectContainer[pos].liveURL;
     modal.querySelector('.source').href = objectContainer[pos].sourceURL;
-    modal.style.display = "block";
+    modal.style.display = 'block';
   });
 }
 
-closeModal.addEventListener("click", () => {
-  modal.style.display = "none";
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
 });
