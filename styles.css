@@ -830,7 +830,7 @@ textarea::placeholder {
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .modal-dialog {
@@ -848,7 +848,7 @@ textarea::placeholder {
   align-items: flex-start;
 }
 
-.img-container img {
+.modal-container .img-container img {
   display: block;
   width: 70%;
   margin-inline: auto;
@@ -866,9 +866,14 @@ textarea::placeholder {
   width: 230px;
 }
 
+.modal-container .sourc-box {
+  border-top: 0.2px solid rgb(94, 94, 94, 0.2);
+  padding-top: 30px;
+}
+
 .modal-container .tech {
-  border-bottom: 0.2px solid rgb(94, 94, 94, 0.2);
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  width: 230px;
 }
 
 .btn-modal {
@@ -876,7 +881,7 @@ textarea::placeholder {
   border: 1px solid #2230d2;
   color: #2230d2;
   padding: 12px 3px 12px 3px;
-  border-radius: 8px ;
+  border-radius: 8px;
   flex: 1;
   display: flex;
   align-items: center;
@@ -891,6 +896,7 @@ textarea::placeholder {
   .description {
     flex-direction: row;
   }
+
   .desc {
     flex: 60%;
     padding: 16px 20px 70px;
