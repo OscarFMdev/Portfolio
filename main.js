@@ -82,8 +82,10 @@ for (let index = 0; index < modalButton.length; index++) {
     modal.querySelector('.modal-title').innerHTML = objectContainer[pos].title;
     modal.querySelector('.project-data').innerHTML = objectContainer[pos].timeline;
     modal.querySelector('.img-container img').src = objectContainer[pos].picture;
-    modal.querySelector('.desc').src = objectContainer[pos].description;
-    modal.querySelector('.tech').src = objectContainer[pos].technologies;
+    modal.querySelector('.desc').innerHTML = objectContainer[pos].description;
+    modal.querySelector('.tech').innerHTML = objectContainer[pos].technologies;
+    modal.querySelector('.live').href = objectContainer[pos].liveURL;
+    modal.querySelector('.source').href = objectContainer[pos].sourceURL;
     modal.style.display = "block";
   });
 }
