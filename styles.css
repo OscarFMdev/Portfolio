@@ -819,6 +819,7 @@ textarea::placeholder {
 
 /* Modal styles */
 .modal-container {
+  display: none;
   position: fixed;
   inset: 0;
   background-color: rgba(128, 128, 128, 0.9);
