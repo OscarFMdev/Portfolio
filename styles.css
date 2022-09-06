@@ -68,8 +68,8 @@ nav {
 .fixed {
   position: fixed;
   display: block !important;
-  margin-right: 10px;
-  width: 100px;
+  right: 28px;
+  top: 10px;
 }
 
 .open {
@@ -103,7 +103,7 @@ nav {
   font-size: 32px;
   color: white;
   font-weight: 500;
-  padding-block: 20px;
+  padding-block: 35px;
 }
 
 .logo {
@@ -815,4 +815,12 @@ textarea::placeholder {
     margin: 20px 0;
     margin-left: 0 !important;
   }
+}
+
+/* Modal styles */
+
+.header-modal-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
