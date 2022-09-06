@@ -30,6 +30,8 @@ menuOptions.addEventListener('click', () => {
   openMenu.classList.add('fa-bars');
 });
 
+/* modal */
+
 const objectContainer = [];
 function CardConstruct(
   title,
@@ -93,3 +95,5 @@ for (let index = 0; index < modalButton.length; index += 1) {
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+
+console.log(objectContainer);
