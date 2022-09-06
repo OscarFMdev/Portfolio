@@ -836,7 +836,7 @@ textarea::placeholder {
 .modal-dialog {
   display: inline-block;
   width: 100%;
-  max-width: min(1000px,90%);
+  width: min(1000px,90%);
   background-color: white;
   padding: 16px;
   border-radius: 8px;
