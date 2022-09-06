@@ -850,7 +850,7 @@ textarea::placeholder {
 
 .img-container img {
   display: block;
-  width: 80%;
+  width: 70%;
   margin-inline: auto;
 }
 
@@ -887,10 +887,15 @@ textarea::placeholder {
   }
   .desc {
     flex: 60%;
-    padding: 16px;
+    padding: 16px 20px 70px;
   }
 
   .btn-modal {
     flex: auto;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
   }
 }
