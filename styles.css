@@ -836,7 +836,7 @@ textarea::placeholder {
 .modal-dialog {
   display: inline-block;
   width: 100%;
-  width: min(1000px,90%);
+  width: calc(min(1000px, 90%));
   background-color: white;
   padding: 16px;
   border-radius: 8px;
@@ -863,16 +863,6 @@ textarea::placeholder {
 .sourc-box {
   padding-block: 16px;
   display: flex;
-  width: 230px;
-}
-
-.modal-container .sourc-box {
-  border-top: 0.2px solid rgb(94, 94, 94, 0.2);
-  padding-top: 30px;
-}
-
-.modal-container .tech {
-  padding-bottom: 10px;
   width: 230px;
 }
 
@@ -914,6 +904,16 @@ textarea::placeholder {
     font-weight: 500;
     line-height: 20px;
     text-align: center;
+  }
+
+  .modal-container .sourc-box {
+    border-top: 0.2px solid rgb(94, 94, 94, 0.2);
+    padding-top: 30px;
+  }
+  
+  .modal-container .tech {
+    padding-bottom: 10px;
+    width: 230px;
   }
 
   .live,
