@@ -90,7 +90,7 @@ nav {
 
 .blur {
   filter: blur(8px);
-  /* -webkit-filter: blur(8px); */
+  -webkit-filter: blur(8px);
 }
 
 .open-menu {
@@ -785,7 +785,7 @@ textarea::placeholder {
 
   #about .social-media-icons {
     column-gap: 25px;
-    margin: 23px 30px;
+    margin: 10px 0;
     z-index: 5;
   }
 

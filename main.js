@@ -1,7 +1,6 @@
 const openMenu = document.querySelector('.hamburger');
 const menuOptions = document.querySelector('.menu-options');
 const crossDiv = document.querySelector('.close-menu');
-const cross = document.querySelector('.close')
 openMenu.addEventListener('click', () => {
   menuOptions.classList.toggle('open');
   menuOptions.style.height = '100vh';
@@ -15,7 +14,6 @@ crossDiv.addEventListener('click', () => {
   crossDiv.style.visibility = 'hidden';
   menuOptions.style.height = '0';
 });
-
 
 window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
@@ -204,9 +202,6 @@ const modal = document.querySelector('.modal-container');
 function close() {
   modal.style.display = 'none';
 }
-
-
-
 
 for (let index = 0; index < modalButton.length; index += 1) {
   modalButton[index].addEventListener('click', (e) => {
