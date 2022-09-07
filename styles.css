@@ -283,6 +283,7 @@ ul {
   box-shadow: 1px 1px 55px -23px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 55px -23px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 55px -23px rgba(0, 0, 0, 0.75);
+  min-width: 300px;
 }
 
 .desktop-description {
@@ -700,6 +701,7 @@ textarea::placeholder {
     max-width: 70%;
     margin: 0;
     padding: 0;
+    min-width: 700px;
   }
 
   .mobile-card {
@@ -906,7 +908,6 @@ textarea::placeholder {
 }
 
 .modal-container .img-container img {
-  display: block;
   width: 100%;
   margin-inline: auto;
 }
@@ -919,6 +920,7 @@ textarea::placeholder {
 
 .source-box {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .btn-modal {

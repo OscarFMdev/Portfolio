@@ -152,7 +152,7 @@ const array = [
 const cardsSection = document.querySelector('#works');
 
 for (let i = 0; i < array.length; i += 1) {
-  cardsSection.innerHTML += `<div class="project" style="min-width: 700px;">
+  cardsSection.innerHTML += `<div class="project">
   <img src="${array[i].image}" alt="Project image" class="project-image mobile-image">
   <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image ${array[i].side}">
   <div class="text-content">
@@ -211,28 +211,34 @@ for (let index = 0; index < modalButton.length; index += 1) {
           <div class="modal-dialog">
             <div class="modal-header">
               <div>
-                <h3 class="modal-title">${array[pos].titleDesktop}</h3>
+                <h3 class="modal-title">${array[pos].title}</h3>
                 <div class="project-data" style="margin-bottom= 150px;">
-                  <p class="bold">${array[pos].featuredDesktop[0]}</p>
-                  <p class="middot">•</p>
-                  <p>${array[pos].featuredDesktop[1]}</p>
-                  <p class="middot">•</p>
-                  <p>${array[pos].featuredDesktop[2]}</p>
+                  <p class="bold mobile-card">${array[pos].featured[0]}</p>
+                  <p class="middot mobile-card">•</p>
+                  <p class="mobile-card">${array[pos].featured[1]}</p>
+                  <p class="middot mobile-card">•</p>
+                  <p class="mobile-card">${array[pos].featured[2]}</p>
+
+                  <p class="bold desktop-card">${array[pos].featuredDesktop[0]}</p>
+                  <p class="middot desktop-card">•</p>
+                  <p class="desktop-card">${array[pos].featuredDesktop[1]}</p>
+                  <p class="middot desktop-card">•</p>
+                  <p class="desktop-card">${array[pos].featuredDesktop[2]}</p>
                 </div>
               </div>
               <img src="./images/modal/close-modal.svg" alt="close modal image" class="close-modal" onclick="close()">
             </div>
             <div class="modal-content">
               <div class="img-container">
-                <img src="${array[pos].desktopImage}" alt="">
+                <img class="mobile-card" src="${array[pos].image}" alt="project image">
+                <img class="desktop-card" src="${array[pos].desktopImage}" alt="project image">
               </div>
               <div class="description">
-                <p class="desc">
-                  ${array[pos].longDescription}
-                </p>
+                <p class="desc mobile-card">${array[pos].mobileDescription}</p>
+                <p class="desc desktop-card">${array[pos].longDescription}</p>
                 <div class="tech-box">
                   <div class="tech">
-                    <ul class="buttons-flex">
+                    <ul class="buttons-flex" style="margin-bottom:30px">
                       <li class="li-button">${array[pos].technologiesModal[0]}</li>
                       <li class="li-button">${array[pos].technologiesModal[1]}</li>
                       <li class="li-button">${array[pos].technologiesModal[2]}</li>
