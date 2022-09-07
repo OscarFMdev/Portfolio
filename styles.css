@@ -692,7 +692,6 @@ textarea::placeholder {
     width: auto;
   }
 
-  
   /* WORKS */
 
   .project {
@@ -734,6 +733,7 @@ textarea::placeholder {
   .desktop-image {
     display: block;
   }
+
   .right-side {
     order: 1;
     margin-left: 20px;
@@ -891,13 +891,14 @@ textarea::placeholder {
   width: 100%;
   width: calc(min(1000px, 90%));
   background-color: white;
-  padding: 16px 16px 0px 16px;
+  padding: 16px 16px 0 16px;
   border-radius: 8px;
 }
 
 .modal-container .desc {
   padding-bottom: 30px;
 }
+
 .modal-header {
   display: flex;
   justify-content: space-between;
