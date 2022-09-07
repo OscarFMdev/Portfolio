@@ -35,61 +35,77 @@ menuOptions.addEventListener('click', () => {
 const array = [{
     id: '1',
     title: 'Tonic',
+    titleDesktop: 'Tonic',
     mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured: ['Canopy', 'Back End Dev', 2015],
+    featuredDesktop: ['Canopy', 'Back End Dev', 2015],
     image: './images/works-section/project1.svg',
     desktopImage: './images/works-section/desktop/project1.svg',
     side: 'left-side',
     technologies: ['html', 'css', 'javascript'],
-    live_version: 'https://oscarfmdev.github.io/PortfolioProject/',
-    source_link: 'https://github.com/OscarFMdev/PortfolioProject',
+    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
+    technologiesModal: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstraps'],
+    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
+    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
   },
 
   {
     id: '2',
     title: 'Multi-Post Stories',
+    titleDesktop: 'Multi-Post Stories',
     mobileDescription: 'A convenient way to keep track of their daily routine works.',
-    desktopDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    desktopDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured: ['Canopy', 'Back End Dev', 2015],
+    featuredDesktop: ['Facebook', 'Full Stack Dev', 2015],
     image: './images/works-section/project2.svg',
     desktopImage: './images/works-section/desktop/project2.svg',
     side: 'right-side',
     technologies: ['html', 'ruby on rails', 'css', 'javascript'],
-    live_version: 'https://oscarfmdev.github.io/PortfolioProject/',
-    source_link: 'https://github.com/OscarFMdev/PortfolioProject',
+    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
+    technologiesModal: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstraps'],
+    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
+    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
   },
 
   {
     id: '3',
     title: 'Tonic',
+    titleDesktop: 'Facebook 360',
     mobileDescription: 'This is a rocket booking and mission joining application.',
-    desktopDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    desktopDescription: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured: ['Canopy', 'Back End Dev', 2015],
+    featuredDesktop: ['Facebook', 'Full Stack Dev', 2015],
     image: './images/works-section/project3.svg',
     desktopImage: './images/works-section/desktop/project3.svg',
     side: 'left-side',
-    technologies: ['ReactJS', 'Redux', 'Jest'],
-    live_version: 'https://oscarfmdev.github.io/PortfolioProject/',
-    source_link: 'https://github.com/OscarFMdev/PortfolioProject',
+    technologies: ['html', 'css', 'javascript'],
+    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
+    technologiesModal: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstraps'],
+    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
+    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
   },
 
   {
     id: '4',
     title: 'Multi-Post Stories',
+    titleDesktop: 'Uber navigation',
     mobileDescription: 'MyBudget is a budget manager application.',
-    desktopDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    desktopDescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured: ['Canopy', 'Back End Dev', 2015],
+    featuredDesktop: ['Uber', 'Lead developer', 2018],
     image: './images/works-section/project4.svg',
     desktopImage: './images/works-section/desktop/project4.svg',
     side: 'right-side',
-    technologies: ['Ruby on Rails', 'ReactJS', 'PostgreSQL'],
-    live_version: 'https://oscarfmdev.github.io/PortfolioProject/',
-    source_link: 'https://github.com/OscarFMdev/PortfolioProject',
+    technologies: ['html', 'css', 'javascript'],
+    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
+    technologiesModal: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstraps'],
+    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
+    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
   },
 ];
 
@@ -107,26 +123,126 @@ for(let i = 0; i < array.length; i += 1) {
   <img src="${array[i].image}" alt="Project image" class="project-image mobile-image">
   <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image ${array[i].side}">
   <div class="text-content">
-    <h3 class="project-title">${array[i].title}</h3>
+    <h3 class="project-title mobile-card">${array[i].title}</h3>
+    <h3 class="project-title desktop-card">${array[i].titleDesktop}</h3>
     <div class="project-data">
-      <p class="bold">${array[i].featured[0]}</p>
-      <p class="middot">&bull;</p>
-      <p>${array[i].featured[1]}</p>
-      <p class="middot">&bull;</p>
-      <p>${array[i].featured[2]}</p>
+      <!--mobile-->
+      <p class="bold mobile-card">${array[i].featured[0]}</p>
+      <p class="middot mobile-card">&bull;</p>
+      <p class="mobile-card">${array[i].featured[1]}</p>
+      <p class="middot mobile-card">&bull;</p>
+      <p class="mobile-card">${array[i].featured[2]}</p>
+
+      <!--desktop-->
+      <p class="bold desktop-card">${array[i].featuredDesktop[0]}</p>
+      <p class="middot desktop-card">&bull;</p>
+      <p class="desktop-card">${array[i].featuredDesktop[1]}</p>
+      <p class="middot desktop-card">&bull;</p>
+      <p class="desktop-card">${array[i].featuredDesktop[2]}</p>
     </div>
     <p class="project-description mobile-description">${array[i].mobileDescription}</p>
     <p class="project-description desktop-description">${array[i].desktopDescription}</p>
     <ul class="buttons-flex">
-      <li class="li-button">html</li>
-      <li class="li-button">css</li>
-      <li class="li-button">javaScript</li>
+
+      <li class="li-button mobile-card">${array[i].technologies[0]}</li>
+      <li class="li-button mobile-card">${array[i].technologies[1]}</li>
+      <li class="li-button mobile-card">${array[i].technologies[2]}</li>
+
+
+      <li class="li-button desktop-card">${array[i].technologiesDesktop[0]}</li>
+      <li class="li-button desktop-card">${array[i].technologiesDesktop[1]}</li>
+      <li class="li-button desktop-card">${array[i].technologiesDesktop[2]}</li>
+      <li class="li-button desktop-card">${array[i].technologiesDesktop[3]}</li>
     </ul>
-    <button class="project-button ">See Project</button>
+    <button id=${array[i].id - 1} class="project-button">See Project</button>
   </div>
 </div> 
   `
 }
+
+
+
+const modalButton = document.querySelectorAll('.project-button');
+const modal = document.querySelector('.modal-container');
+
+
+for (let index = 0; index < modalButton.length; index += 1) {
+
+  let open = false;
+  
+  modalButton[index].addEventListener('click', (e) => {
+    const pos = e.target.getAttribute('id');
+    open = true;
+
+
+    modal.style.display = 'block'
+    console.log(pos)
+    
+    modal.innerHTML +=
+
+    `
+    <div class="modal-box">
+          <div class="modal-dialog">
+            <div class="modal-header">
+              <div>
+                <h3 class="modal-title">${array[pos].titleDesktop}</h3>
+                <div class="project-data">
+                  <p class="bold">${array[pos].featuredDesktop[0]}</p>
+                  <p class="middot">•</p>
+                  <p>${array[pos].featuredDesktop[1]}</p>
+                  <p class="middot">•</p>
+                  <p>${array[pos].featuredDesktop[2]}</p>
+                </div>
+              </div>
+              <img src="./images/modal/close-modal.svg" alt="close modal image" class="close-modal">
+            </div>
+            <div class="modal-content">
+              <div class="img-container">
+                <img src="${array[pos].desktopImage}" alt="">
+              </div>
+              <div class="description">
+                <p class="desc">
+                  ${array[pos].longDescription}
+                </p>
+                <div class="tech-box">
+                  <div class="tech">
+                    <ul class="buttons-flex">
+                      <li class="li-button">${array[pos].technologiesModal[0]}</li>
+                      <li class="li-button">${array[pos].technologiesModal[1]}</li>
+                      <li class="li-button">${array[pos].technologiesModal[2]}</li>
+                      <li class="li-button">${array[pos].technologiesModal[3]}</li>
+                      <li class="li-button">${array[pos].technologiesModal[4]}</li>
+                      <li class="li-button">${array[pos].technologiesModal[5]}</li>
+                    </ul>
+                  </div>
+                  <div class="source-box">
+                    <a class="btn-modal live" href="${array[pos].liveURL}">See Live
+                      <img src="./images/modal/live.svg" alt="live image">
+                    </a>
+                    <a class="btn-modal source" href="${array[pos].sourceURL}">See Source
+                      <img src="./images/modal/source.svg" alt="source image">
+                    </a>
+                  </div> <!-- source-box -->
+                </div> <!-- tech-box -->
+              </div> <!-- description -->
+            </div> <!-- modal-content -->
+          </div> <!-- modal-dialog -->
+        </div>  <!-- modal-box--> `
+  });
+
+  // if( open === true ) {
+  //   const closeModal = document.querySelector('.close-modal');
+
+  //   closeModal[index].addEventListener('click', (e) => {
+  //     modal.style.display = 'none';
+  //   });
+    
+  // }
+}
+
+
+
+
 
 
 
@@ -179,26 +295,4 @@ for(let i = 0; i < array.length; i += 1) {
 //   );
 // }
 
-// const modalButton = document.querySelectorAll('.project-button');
-// const modal = document.querySelector('.modal-container');
-// const closeModal = document.querySelector('.close-modal');
-// for (let index = 0; index < modalButton.length; index += 1) {
-//   modalButton[index].setAttribute('data-index', index);
-//   modalButton[index].addEventListener('click', (e) => {
-//     const pos = e.target.getAttribute('data-index');
-//     modal.querySelector('.modal-title').innerHTML = objectContainer[pos].title;
-//     modal.querySelector('.project-data').innerHTML = objectContainer[pos].timeline;
-//     modal.querySelector('.img-container img').src = objectContainer[pos].picture;
-//     modal.querySelector('.desc').innerHTML = objectContainer[pos].description;
-//     modal.querySelector('.buttons-flex').innerHTML = objectContainer[pos].technologies;
-//     modal.querySelector('.live').href = objectContainer[pos].liveURL;
-//     modal.querySelector('.source').href = objectContainer[pos].sourceURL;
-//     modal.style.display = 'block';
-//   });
-// }
 
-// closeModal.addEventListener('click', () => {
-//   modal.style.display = 'none';
-// });
-
-// console.log(objectContainer);

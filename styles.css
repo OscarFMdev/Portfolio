@@ -246,6 +246,13 @@ ul {
 }
 
 /* WORKS SECTION */
+.mobile-card {
+  display: block;
+}
+
+.desktop-card {
+  display: none;
+}
 
 #works {
   display: grid;
@@ -693,6 +700,14 @@ textarea::placeholder {
     padding: 0;
   }
 
+  .mobile-card {
+    display: none;
+  }
+
+  .desktop-card {
+    display: block;
+  }
+
   .project img {
     min-width: 400px;
     max-width: 544px;
@@ -702,6 +717,7 @@ textarea::placeholder {
 
   .desktop-description {
     display: block;
+    margin-right: 14px;
   }
 
   .mobile-description {
