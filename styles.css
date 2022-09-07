@@ -89,7 +89,7 @@ nav {
 
 .blur {
   filter: blur(8px);
-  /* -webkit-filter: blur(8px); */
+  -webkit-filter: blur(8px);
 }
 
 .open-menu {
