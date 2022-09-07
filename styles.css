@@ -785,7 +785,7 @@ textarea::placeholder {
 
   #about .social-media-icons {
     column-gap: 25px;
-    margin: 10px 0;
+    margin: 10px 3%;
     z-index: 5;
   }
 
