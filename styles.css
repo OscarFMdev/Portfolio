@@ -255,6 +255,7 @@ ul {
 }
 
 #works {
+  width: 100%;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -270,7 +271,7 @@ ul {
   display: flex;
   align-items: center;
   margin-left: 7%;
-  width: 80%;
+  width: 70%;
   background-color: white;
   padding: 10px;
   padding-top: 10px;
@@ -691,11 +692,13 @@ textarea::placeholder {
     width: auto;
   }
 
+  
   /* WORKS */
+
   .project {
     flex-direction: row;
     flex: 1 1 auto;
-    width: 100%;
+    max-width: 70%;
     margin: 0;
     padding: 0;
   }
@@ -888,10 +891,13 @@ textarea::placeholder {
   width: 100%;
   width: calc(min(1000px, 90%));
   background-color: white;
-  padding: 16px 16px 65px 16px;
+  padding: 16px 16px 0px 16px;
   border-radius: 8px;
 }
 
+.modal-container .desc {
+  padding-bottom: 30px;
+}
 .modal-header {
   display: flex;
   justify-content: space-between;

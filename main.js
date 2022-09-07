@@ -1,164 +1,160 @@
-const openMenu = document.querySelector(".hamburger");
-const menuOptions = document.querySelector(".menu-options");
-openMenu.addEventListener("click", () => {
-  menuOptions.classList.toggle("open");
+const openMenu = document.querySelector('.hamburger');
+const menuOptions = document.querySelector('.menu-options');
+openMenu.addEventListener('click', () => {
+  menuOptions.classList.toggle('open');
 
-  if (menuOptions.classList.contains("open")) {
-    menuOptions.style.height = "100vh";
-    openMenu.classList.remove("fa-bars");
-    openMenu.classList.add("fa-close", "text-white", "fa-2x", "fixed");
+  if (menuOptions.classList.contains('open')) {
+    menuOptions.style.height = '100vh';
+    openMenu.classList.remove('fa-bars');
+    openMenu.classList.add('fa-close', 'text-white', 'fa-2x', 'fixed');
   } else {
-    menuOptions.style.height = "0";
-    openMenu.classList.remove("fa-close", "text-white", "fa-2x", "fixed");
-    openMenu.classList.add("fa-bars");
+    menuOptions.style.height = '0';
+    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
+    openMenu.classList.add('fa-bars');
   }
 });
 
-window.addEventListener("resize", () => {
+window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
-    menuOptions.classList.remove("open");
-    openMenu.classList.remove("fa-close", "text-white", "fa-2x", "fixed");
-    openMenu.classList.add("fa-bars");
+    menuOptions.classList.remove('open');
+    openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
+    openMenu.classList.add('fa-bars');
   } else {
-    menuOptions.style.height = "auto";
+    menuOptions.style.height = 'auto';
   }
 });
 
-menuOptions.addEventListener("click", () => {
-  openMenu.classList.remove("fa-close", "text-white", "fa-2x", "fixed");
-  menuOptions.classList.remove("open");
-  openMenu.classList.add("fa-bars");
+menuOptions.addEventListener('click', () => {
+  openMenu.classList.remove('fa-close', 'text-white', 'fa-2x', 'fixed');
+  menuOptions.classList.remove('open');
+  openMenu.classList.add('fa-bars');
 });
 
 /* modal */
 
 const array = [
   {
-    id: "1",
-    title: "Tonic",
-    titleDesktop: "Tonic",
+    id: '1',
+    title: 'Tonic',
+    titleDesktop: 'Tonic',
     mobileDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopDescription:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featured: ["Canopy", "Back End Dev", 2015],
-    featuredDesktop: ["Canopy", "Back End Dev", 2015],
-    image: "./images/works-section/project1.svg",
-    desktopImage: "./images/works-section/desktop/project1.svg",
-    side: "left-side",
-    technologies: ["html", "css", "javascript"],
-    technologiesDesktop: ["html", "css", "ruby on rails", "javascript"],
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featured: ['Canopy', 'Back End Dev', 2015],
+    featuredDesktop: ['Canopy', 'Back End Dev', 2015],
+    image: './images/works-section/project1.svg',
+    desktopImage: './images/works-section/desktop/project1.svg',
+    side: 'left-side',
+    technologies: ['html', 'css', 'javascript'],
+    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
     technologiesModal: [
-      "html",
-      "css",
-      "javascript",
-      "github",
-      "ruby",
-      "bootstraps",
+      'html',
+      'css',
+      'javascript',
+      'github',
+      'ruby',
+      'bootstraps',
     ],
-    liveURL: "https://oscarfmdev.github.io/PortfolioProject/",
-    sourceURL: "https://github.com/OscarFMdev/PortfolioProject",
+    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
+    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
   },
 
   {
-    id: "2",
-    title: "Multi-Post Stories",
-    titleDesktop: "Multi-Post Stories",
+    id: '2',
+    title: 'Multi-Post Stories',
+    titleDesktop: 'Multi-Post Stories',
     mobileDescription:
-      "A convenient way to keep track of their daily routine works.",
+      'A convenient way to keep track of their daily routine works.',
     desktopDescription:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featured: ["Canopy", "Back End Dev", 2015],
-    featuredDesktop: ["Facebook", "Full Stack Dev", 2015],
-    image: "./images/works-section/project2.svg",
-    desktopImage: "./images/works-section/desktop/project2.svg",
-    side: "right-side",
-    technologies: ["html", "ruby on rails", "css", "javascript"],
-    technologiesDesktop: ["html", "css", "ruby on rails", "javascript"],
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featured: ['Canopy', 'Back End Dev', 2015],
+    featuredDesktop: ['Facebook', 'Full Stack Dev', 2015],
+    image: './images/works-section/project2.svg',
+    desktopImage: './images/works-section/desktop/project2.svg',
+    side: 'right-side',
+    technologies: ['html', 'ruby on rails', 'css', 'javascript'],
+    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
     technologiesModal: [
-      "html",
-      "css",
-      "javascript",
-      "github",
-      "ruby",
-      "bootstraps",
+      'html',
+      'css',
+      'javascript',
+      'github',
+      'ruby',
+      'bootstraps',
     ],
-    liveURL: "https://oscarfmdev.github.io/PortfolioProject/",
-    sourceURL: "https://github.com/OscarFMdev/PortfolioProject",
+    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
+    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
   },
 
   {
-    id: "3",
-    title: "Tonic",
-    titleDesktop: "Facebook 360",
+    id: '3',
+    title: 'Tonic',
+    titleDesktop: 'Facebook 360',
     mobileDescription:
-      "This is a rocket booking and mission joining application.",
+      'This is a rocket booking and mission joining application.',
     desktopDescription:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featured: ["Canopy", "Back End Dev", 2015],
-    featuredDesktop: ["Facebook", "Full Stack Dev", 2015],
-    image: "./images/works-section/project3.svg",
-    desktopImage: "./images/works-section/desktop/project3.svg",
-    side: "left-side",
-    technologies: ["html", "css", "javascript"],
-    technologiesDesktop: ["html", "css", "ruby on rails", "javascript"],
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featured: ['Canopy', 'Back End Dev', 2015],
+    featuredDesktop: ['Facebook', 'Full Stack Dev', 2015],
+    image: './images/works-section/project3.svg',
+    desktopImage: './images/works-section/desktop/project3.svg',
+    side: 'left-side',
+    technologies: ['html', 'css', 'javascript'],
+    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
     technologiesModal: [
-      "html",
-      "css",
-      "javascript",
-      "github",
-      "ruby",
-      "bootstraps",
+      'html',
+      'css',
+      'javascript',
+      'github',
+      'ruby',
+      'bootstraps',
     ],
-    liveURL: "https://oscarfmdev.github.io/PortfolioProject/",
-    sourceURL: "https://github.com/OscarFMdev/PortfolioProject",
+    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
+    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
   },
 
   {
-    id: "4",
-    title: "Multi-Post Stories",
-    titleDesktop: "Uber navigation",
-    mobileDescription: "MyBudget is a budget manager application.",
+    id: '4',
+    title: 'Multi-Post Stories',
+    titleDesktop: 'Uber navigation',
+    mobileDescription: 'MyBudget is a budget manager application.',
     desktopDescription:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featured: ["Canopy", "Back End Dev", 2015],
-    featuredDesktop: ["Uber", "Lead developer", 2018],
-    image: "./images/works-section/project4.svg",
-    desktopImage: "./images/works-section/desktop/project4.svg",
-    side: "right-side",
-    technologies: ["html", "css", "javascript"],
-    technologiesDesktop: ["html", "css", "ruby on rails", "javascript"],
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featured: ['Canopy', 'Back End Dev', 2015],
+    featuredDesktop: ['Uber', 'Lead developer', 2018],
+    image: './images/works-section/project4.svg',
+    desktopImage: './images/works-section/desktop/project4.svg',
+    side: 'right-side',
+    technologies: ['html', 'css', 'javascript'],
+    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
     technologiesModal: [
-      "html",
-      "css",
-      "javascript",
-      "github",
-      "ruby",
-      "bootstraps",
+      'html',
+      'css',
+      'javascript',
+      'github',
+      'ruby',
+      'bootstraps',
     ],
-    liveURL: "https://oscarfmdev.github.io/PortfolioProject/",
-    sourceURL: "https://github.com/OscarFMdev/PortfolioProject",
+    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
+    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
   },
 ];
 
-const cardsSection = document.querySelector("#works");
+const cardsSection = document.querySelector('#works');
 
 for (let i = 0; i < array.length; i += 1) {
-  cardsSection.innerHTML += `<div class="project">
-  <img src="${
-    array[i].image
-  }" alt="Project image" class="project-image mobile-image">
-  <img src="${
-    array[i].desktopImage
-  }" alt="Project image" class="project-image desktop-image ${array[i].side}">
+  cardsSection.innerHTML += `<div class="project" style="min-width: 700px;">
+  <img src="${array[i].image}" alt="Project image" class="project-image mobile-image">
+  <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image ${array[i].side}">
   <div class="text-content">
     <h3 class="project-title mobile-card">${array[i].title}</h3>
     <h3 class="project-title desktop-card">${array[i].titleDesktop}</h3>
@@ -177,12 +173,8 @@ for (let i = 0; i < array.length; i += 1) {
       <p class="middot desktop-card">&bull;</p>
       <p class="desktop-card">${array[i].featuredDesktop[2]}</p>
     </div>
-    <p class="project-description mobile-description">${
-      array[i].mobileDescription
-    }</p>
-    <p class="project-description desktop-description">${
-      array[i].desktopDescription
-    }</p>
+    <p class="project-description mobile-description">${array[i].mobileDescription}</p>
+    <p class="project-description desktop-description">${array[i].desktopDescription}</p>
     <ul class="buttons-flex">
 
       <li class="li-button mobile-card">${array[i].technologies[0]}</li>
@@ -201,21 +193,18 @@ for (let i = 0; i < array.length; i += 1) {
   `;
 }
 
-const modalButton = document.querySelectorAll(".project-button");
-const modal = document.querySelector(".modal-container");
+const modalButton = document.querySelectorAll('.project-button');
+const modal = document.querySelector('.modal-container');
 
-function close(){
+function close() {
   modal.style.display = 'none';
 }
 
 for (let index = 0; index < modalButton.length; index += 1) {
-  let open = false;
+  modalButton[index].addEventListener('click', (e) => {
+    const pos = e.target.getAttribute('id');
 
-  modalButton[index].addEventListener("click", (e) => {
-    const pos = e.target.getAttribute("id");
-    open = true;
-
-    modal.style.display = "block";
+    modal.style.display = 'block';
 
     modal.innerHTML = `
     <div class="modal-box">
@@ -223,7 +212,7 @@ for (let index = 0; index < modalButton.length; index += 1) {
             <div class="modal-header">
               <div>
                 <h3 class="modal-title">${array[pos].titleDesktop}</h3>
-                <div class="project-data">
+                <div class="project-data" style="margin-bottom= 150px;">
                   <p class="bold">${array[pos].featuredDesktop[0]}</p>
                   <p class="middot">•</p>
                   <p>${array[pos].featuredDesktop[1]}</p>
@@ -265,8 +254,9 @@ for (let index = 0; index < modalButton.length; index += 1) {
             </div> <!-- modal-content -->
           </div> <!-- modal-dialog -->
         </div>  <!-- modal-box--> `;
-    const closeModal = document.querySelector(".close-modal");
-    closeModal.addEventListener("click",close);
+    const closeModal = document.querySelector('.close-modal');
+    closeModal.addEventListener('click', close);
+    modal.addEventListener('click', close);
   });
 
   // if( open === true ) {
