@@ -900,7 +900,7 @@ textarea::placeholder {
 
 .modal-container .img-container img {
   display: block;
-  width: 70%;
+  width: 100%;
   margin-inline: auto;
 }
 
