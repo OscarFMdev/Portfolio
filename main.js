@@ -34,12 +34,14 @@ menuOptions.addEventListener('click', () => {
 
 const array = [{
     id: '1',
-    name: 'Tonic',
-    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Tonic',
+    mobileDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    desktopDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured: ['Canopy', 'Back End Dev', 2015],
     image: './images/works-section/project1.svg',
     desktopImage: './images/works-section/desktop/project1.svg',
+    side: 'left-side',
     technologies: ['html', 'css', 'javascript'],
     live_version: 'https://oscarfmdev.github.io/PortfolioProject/',
     source_link: 'https://github.com/OscarFMdev/PortfolioProject',
@@ -47,12 +49,14 @@ const array = [{
 
   {
     id: '2',
-    name: 'Multi-Post Stories',
-    shortDescription: 'A convenient way to keep track of their daily routine works.',
+    title: 'Multi-Post Stories',
+    mobileDescription: 'A convenient way to keep track of their daily routine works.',
+    desktopDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured: ['Canopy', 'Back End Dev', 2015],
     image: './images/works-section/project2.svg',
     desktopImage: './images/works-section/desktop/project2.svg',
+    side: 'right-side',
     technologies: ['html', 'ruby on rails', 'css', 'javascript'],
     live_version: 'https://oscarfmdev.github.io/PortfolioProject/',
     source_link: 'https://github.com/OscarFMdev/PortfolioProject',
@@ -60,12 +64,14 @@ const array = [{
 
   {
     id: '3',
-    name: 'Tonic',
-    shortDescription: 'This is a rocket booking and mission joining application.',
+    title: 'Tonic',
+    mobileDescription: 'This is a rocket booking and mission joining application.',
+    desktopDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured: ['Canopy', 'Back End Dev', 2015],
     image: './images/works-section/project3.svg',
     desktopImage: './images/works-section/desktop/project3.svg',
+    side: 'left-side',
     technologies: ['ReactJS', 'Redux', 'Jest'],
     live_version: 'https://oscarfmdev.github.io/PortfolioProject/',
     source_link: 'https://github.com/OscarFMdev/PortfolioProject',
@@ -73,12 +79,14 @@ const array = [{
 
   {
     id: '4',
-    name: 'Multi-Post Stories',
-    shortDescription: 'MyBudget is a budget manager application.',
+    title: 'Multi-Post Stories',
+    mobileDescription: 'MyBudget is a budget manager application.',
+    desktopDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     featured: ['Canopy', 'Back End Dev', 2015],
     image: './images/works-section/project4.svg',
     desktopImage: './images/works-section/desktop/project4.svg',
+    side: 'right-side',
     technologies: ['Ruby on Rails', 'ReactJS', 'PostgreSQL'],
     live_version: 'https://oscarfmdev.github.io/PortfolioProject/',
     source_link: 'https://github.com/OscarFMdev/PortfolioProject',
@@ -96,19 +104,19 @@ for(let i = 0; i < array.length; i += 1) {
 
 
   cardsSection.innerHTML += `<div class="project">
-  <img src="${array[i].image}" alt="Project image" class="project-image">
-  <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image">
+  <img src="${array[i].image}" alt="Project image" class="project-image mobile-image">
+  <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image ${array[i].side}">
   <div class="text-content">
-    <h3 class="project-title">Tonic</h3>
+    <h3 class="project-title">${array[i].title}</h3>
     <div class="project-data">
-      <p class="bold">CANOPY</p>
+      <p class="bold">${array[i].featured[0]}</p>
       <p class="middot">&bull;</p>
-      <p>Back End Dev</p>
+      <p>${array[i].featured[1]}</p>
       <p class="middot">&bull;</p>
-      <p>2015</p>
+      <p>${array[i].featured[2]}</p>
     </div>
-    <p class="project-description">A daily selection of privately personalized reads;
-      no accounts or sign-ups required.</p>
+    <p class="project-description mobile-description">${array[i].mobileDescription}</p>
+    <p class="project-description desktop-description">${array[i].desktopDescription}</p>
     <ul class="buttons-flex">
       <li class="li-button">html</li>
       <li class="li-button">css</li>

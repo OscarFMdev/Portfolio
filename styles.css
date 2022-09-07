@@ -277,6 +277,10 @@ ul {
   -moz-box-shadow: 1px 1px 55px -23px rgba(0, 0, 0, 0.75);
 }
 
+.desktop-description {
+  display: none;
+}
+
 .text-content {
   display: flex;
   flex-direction: column;
@@ -319,7 +323,11 @@ ul {
 .project img {
   height: auto;
   width: 100%;
-  min-width: 300px;
+  min-width: 250px;
+}
+
+.desktop-image {
+  display: none;
 }
 
 .project:hover {
@@ -692,6 +700,21 @@ textarea::placeholder {
     margin: 10px;
   }
 
+  .desktop-description {
+    display: block;
+  }
+
+  .mobile-description {
+    display: none;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: block;
+  }
   .right-side {
     order: 1;
     margin-left: 20px;
