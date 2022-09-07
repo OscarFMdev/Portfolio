@@ -620,19 +620,6 @@ textarea::placeholder {
     font-size: 24px;
     min-width: 100.6px;
     animation-duration: 3s;
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
   }
 
   span {
@@ -736,7 +723,7 @@ textarea::placeholder {
     display: block;
   }
 
-  .right-side {
+  .side-0 {
     order: 1;
     margin-left: 20px;
   }

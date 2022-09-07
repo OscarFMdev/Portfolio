@@ -154,7 +154,7 @@ const cardsSection = document.querySelector('#works');
 for (let i = 0; i < array.length; i += 1) {
   cardsSection.innerHTML += `<div class="project">
   <img src="${array[i].image}" alt="Project image" class="project-image mobile-image">
-  <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image ${array[i].side}">
+  <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image side-${array[i].id % 2}">
   <div class="text-content">
     <h3 class="project-title mobile-card">${array[i].title}</h3>
     <h3 class="project-title desktop-card">${array[i].titleDesktop}</h3>
@@ -199,6 +199,9 @@ const modal = document.querySelector('.modal-container');
 function close() {
   modal.style.display = 'none';
 }
+
+
+
 
 for (let index = 0; index < modalButton.length; index += 1) {
   modalButton[index].addEventListener('click', (e) => {
