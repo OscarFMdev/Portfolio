@@ -166,6 +166,11 @@ const modalButton = document.querySelectorAll('.project-button');
 const modal = document.querySelector('.modal-container');
 
 
+function close() {
+  modal.style.display = 'none';
+}
+
+
 for (let index = 0; index < modalButton.length; index += 1) {
 
   let open = false;
@@ -194,7 +199,7 @@ for (let index = 0; index < modalButton.length; index += 1) {
                   <p>${array[pos].featuredDesktop[2]}</p>
                 </div>
               </div>
-              <img src="./images/modal/close-modal.svg" alt="close modal image" class="close-modal">
+              <img src="./images/modal/close-modal.svg" alt="close modal image" class="close-modal" onclick="close()">
             </div>
             <div class="modal-content">
               <div class="img-container">
