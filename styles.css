@@ -63,6 +63,7 @@ nav {
 .menu-options {
   margin: 0 !important;
   display: none;
+  z-index: 20;
 }
 
 .fixed {
@@ -88,11 +89,20 @@ nav {
 
 .blur {
   filter: blur(8px);
-  -webkit-filter: blur(8px);
+  /* -webkit-filter: blur(8px); */
 }
 
-.openMenu {
+.open-menu {
   z-index: 1000;
+}
+
+.close-menu {
+  z-index: 9999;
+}
+
+.close {
+  top: 20px;
+  right: 35px;
 }
 
 .open li:first-child {
