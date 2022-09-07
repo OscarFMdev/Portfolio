@@ -21,7 +21,9 @@ window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
     menuOptions.classList.remove('open');
     crossDiv.style.visibility = 'hidden';
+    openMenu.style.visibility = 'visible';
   } else {
+    openMenu.style.visibility = 'hidden';
     menuOptions.style.height = 'auto';
   }
 });
