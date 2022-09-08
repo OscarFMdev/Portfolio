@@ -268,3 +268,6 @@ for (let index = 0; index < modalButton.length; index += 1) {
     modal.addEventListener('click', close);
   });
 }
+
+
+/* FORM validation */
