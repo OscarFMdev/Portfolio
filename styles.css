@@ -29,7 +29,6 @@ html {
   box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
-  z-index: 99;
 }
 
 * {
@@ -64,7 +63,6 @@ nav {
 .menu-options {
   margin: 0 !important;
   display: none;
-  z-index: 20;
 }
 
 .fixed {
@@ -103,7 +101,6 @@ nav {
 
 .close {
   top: 20px;
-  right: 35px;
 }
 
 .open li:first-child {
@@ -173,7 +170,7 @@ nav {
   background-color: white;
   border-bottom-left-radius: 60px;
   position: relative;
-  z-index: 10;
+  z-index: -3;
 }
 
 .header-banner {
@@ -766,7 +763,6 @@ textarea::placeholder {
     border-top-right-radius: 100px;
     padding-bottom: 300px;
     padding-top: 200px;
-    z-index: 9;
   }
 
   .languages-section {
@@ -785,8 +781,7 @@ textarea::placeholder {
 
   #about .social-media-icons {
     column-gap: 25px;
-    margin: 10px 3%;
-    z-index: 5;
+    margin: 23px 30px;
   }
 
   .language-box {

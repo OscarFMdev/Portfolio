@@ -156,8 +156,8 @@ const cardsSection = document.querySelector('#works');
 
 for (let i = 0; i < array.length; i += 1) {
   cardsSection.innerHTML += `<div class="project">
-  <img src="${array[i].image}" alt="Project image" class="project-image mobile-image">
-  <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image side-${array[i].id % 2}">
+  <img src="${array[i].image}" alt="Project image" class="project-image mobile-image" loading="lazy" width="641.2" height="478.183">
+  <img src="${array[i].desktopImage}" alt="Project image" class="project-image desktop-image side-${array[i].id % 2}" loading="lazy" width="969" height="797">
   <div class="text-content">
     <h3 class="project-title mobile-card">${array[i].title}</h3>
     <h3 class="project-title desktop-card">${array[i].titleDesktop}</h3>
@@ -229,12 +229,12 @@ for (let index = 0; index < modalButton.length; index += 1) {
                   <p class="desktop-card">${array[pos].featuredDesktop[2]}</p>
                 </div>
               </div>
-              <img src="./images/modal/close-modal.svg" alt="close modal image" class="close-modal" onclick="close()">
+              <img src="./images/modal/close-modal.svg" alt="close modal image" class="close-modal" onclick="close()" width="20" height="20">
             </div>
             <div class="modal-content">
               <div class="img-container">
-                <img class="mobile-card" src="${array[pos].image}" alt="project image">
-                <img class="desktop-card" src="${array[pos].desktopImage}" alt="project image">
+                <img class="mobile-card" src="${array[pos].image}" alt="project image" loading="lazy" width="641.2" height="478.183">
+                <img class="desktop-card" src="${array[pos].desktopImage}" alt="project image" loading="lazy" width="969" height="797">
               </div>
               <div class="description">
                 <p class="desc mobile-card">${array[pos].mobileDescription}</p>
