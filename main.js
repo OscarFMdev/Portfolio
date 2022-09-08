@@ -139,7 +139,7 @@ const array = [
     side: 'right-side',
     technologies: ['html', 'css', 'javascript'],
     technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
-    technologiesModal: [
+    technologies: [
       'html',
       'css',
       'javascript',
