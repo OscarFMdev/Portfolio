@@ -286,5 +286,5 @@ function formSubmit() {
   return true;
 }
 
-// const form = document.querySelector('.form-container');
-// form.addEventListener('submit', formSubmit);
+const form = document.querySelector('.form-container');
+form.addEventListener('submit', formSubmit);
