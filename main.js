@@ -291,3 +291,8 @@ form.addEventListener('submit', formSubmit);
 emailInput.addEventListener('focus', () => {
   errorMessage.style.display = 'none';
 });
+
+/* Local storage */
+
+const userName = document.querySelector('.text-input');
+const messageInput = document.querySelector('textarea');
