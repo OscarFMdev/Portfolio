@@ -313,7 +313,7 @@ if (userName != null) {
   userName.value = window.localStorage.userName;
 }
 
-if( emailInput != null) {
+if (emailInput != null) {
   emailInput.value = window.localStorage.emailInput;
 }
 
