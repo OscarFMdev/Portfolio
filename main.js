@@ -318,6 +318,6 @@ if(emailInput != null) {
   emailInput.value = window.localStorage["emailInput"];
 }
 
-// if(messageInput != null) {
-//   messageInput.value = window.localStorage["messageInput"];
-// }
+if(messageInput != null) {
+  messageInput.value = window.localStorage["messageInput"];
+}
