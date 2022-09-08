@@ -305,9 +305,9 @@ emailInput.addEventListener("input", () => {
   localStorage.setItem('emailInput', emailInput.value);
 });
 
-// messageInput.addEventListener("input", () => {
-//   localStorage.setItem('messageInput', messageInput.value);
-// });
+messageInput.addEventListener("input", () => {
+  localStorage.setItem('messageInput', messageInput.value);
+});
 
 
 // if (userName != null) {
