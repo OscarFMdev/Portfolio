@@ -296,3 +296,28 @@ emailInput.addEventListener('focus', () => {
 
 const userName = document.querySelector('.text-input');
 const messageInput = document.querySelector('textarea');
+
+userName.addEventListener("input", () => {
+  localStorage.setItem('userName', userName.value);
+});
+
+// emailInput.addEventListener("input", () => {
+//   localStorage.setItem('emailInput', emailInput.value);
+// });
+
+// messageInput.addEventListener("input", () => {
+//   localStorage.setItem('messageInput', messageInput.value);
+// });
+
+
+// if (userName != null) {
+//   userName.value = window.localStorage["userName"];
+// }
+
+// if(emailInput != null) {
+//   emailInput.value = window.localStorage["emailInput"];
+// }
+
+// if(messageInput != null) {
+//   messageInput.value = window.localStorage["messageInput"];
+// }
