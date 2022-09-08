@@ -981,6 +981,7 @@ textarea::placeholder {
 /* Form validation */
 
 .error {
+  display: none;
   background-color: rgba(255, 0, 0, 0.531);
   color: white;
   padding: 2px 15px;
