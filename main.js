@@ -314,9 +314,9 @@ if (userName != null) {
   userName.value = window.localStorage["userName"];
 }
 
-// if(emailInput != null) {
-//   emailInput.value = window.localStorage["emailInput"];
-// }
+if(emailInput != null) {
+  emailInput.value = window.localStorage["emailInput"];
+}
 
 // if(messageInput != null) {
 //   messageInput.value = window.localStorage["messageInput"];
