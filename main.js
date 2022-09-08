@@ -310,9 +310,9 @@ messageInput.addEventListener("input", () => {
 });
 
 
-// if (userName != null) {
-//   userName.value = window.localStorage["userName"];
-// }
+if (userName != null) {
+  userName.value = window.localStorage["userName"];
+}
 
 // if(emailInput != null) {
 //   emailInput.value = window.localStorage["emailInput"];
