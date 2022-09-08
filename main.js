@@ -288,3 +288,7 @@ function formSubmit() {
 
 const form = document.querySelector('.form-container');
 form.addEventListener('submit', formSubmit);
+
+emailInput.addEventListener('focus', () => {
+  errorMessage.style.display = 'none';
+})
