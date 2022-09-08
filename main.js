@@ -273,3 +273,5 @@ for (let index = 0; index < modalButton.length; index += 1) {
 /* FORM validation */
 
 const errorMessage = document.querySelector('error');
+const emailInput = document.querySelector('input[type=email]');
+
