@@ -29,6 +29,7 @@ html {
   box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
+  z-index: 2;
 }
 
 * {
@@ -72,6 +73,11 @@ nav {
   top: 10px;
 }
 
+.mobile-menu {
+  display: none;
+  list-style: none;
+}
+
 .open {
   display: block;
   padding-left: 30px;
@@ -83,7 +89,7 @@ nav {
   overflow: hidden;
   background-color: #396df2;
   opacity: 0.9;
-  z-index: 99;
+  z-index: 5;
 }
 
 .blur {
@@ -92,11 +98,11 @@ nav {
 }
 
 .open-menu {
-  z-index: 1000;
+  z-index: 6;
 }
 
 .close-menu {
-  z-index: 9999;
+  z-index: 7;
 }
 
 .close {
@@ -170,7 +176,7 @@ nav {
   background-color: white;
   border-bottom-left-radius: 60px;
   position: relative;
-  z-index: -3;
+  z-index: 1;
 }
 
 .header-banner {
@@ -185,7 +191,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  z-index: -2;
+  z-index: 2;
 }
 
 @keyframes grow {
@@ -226,7 +232,7 @@ nav {
   align-items: center;
   min-width: 250px;
   position: relative;
-  z-index: -1;
+  z-index: 3;
 }
 
 .social-media-icons img {
@@ -432,7 +438,7 @@ ul {
   padding-bottom: 60px;
   border-top-left-radius: 60px;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .languages {
