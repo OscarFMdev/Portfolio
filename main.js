@@ -297,26 +297,21 @@ emailInput.addEventListener('focus', () => {
 const userName = document.querySelector('.text-input');
 const messageInput = document.querySelector('textarea');
 
-userName.addEventListener('input', () => {
-  localStorage.setItem('userName', userName.value);
+form.addEventListener('input', () => {
+  const formData = {
+    name: userName.value,
+    email: emailInput.value,
+    messageInput: messageInput.value,
+  };
+
+  localStorage.setItem('contactFormInput', JSON.stringify(formData));
 });
 
-emailInput.addEventListener('input', () => {
-  localStorage.setItem('emailInput', emailInput.value);
-});
+let savedFormData = localStorage.getItem('contactFormInput');
+savedFormData = JSON.parse(savedFormData);
 
-messageInput.addEventListener('input', () => {
-  localStorage.setItem('messageInput', messageInput.value);
-});
-
-if (userName != null) {
-  userName.value = window.localStorage.userName;
-}
-
-if (emailInput != null) {
-  emailInput.value = window.localStorage.emailInput;
-}
-
-if (messageInput != null) {
-  messageInput.value = window.localStorage.messageInput;
+if (savedFormData != null) {
+  userName.value = savedFormData.name;
+  emailInput.value = savedFormData.email;
+  messageInput.value = savedFormData.messageInput;
 }
