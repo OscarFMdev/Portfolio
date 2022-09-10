@@ -1,7 +1,8 @@
 const openMenu = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const crossDiv = document.querySelector('.close-menu');
-openMenu.addEventListener('click', () => {
+const menuOptions = document.querySelector()
+openMenu.addEventListener('scroll', () => {
   mobileMenu.classList.toggle('open');
   mobileMenu.style.display = 'block';
   mobileMenu.style.height = '100vh';
@@ -156,7 +157,7 @@ const array = [
   },
 ];
 
-const cardsSection = document.querySelector('#works');
+const cardsSection = document.querySelector('.works');
 
 for (let i = 0; i < array.length; i += 1) {
   cardsSection.innerHTML += `<div class="project">
