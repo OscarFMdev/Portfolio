@@ -182,7 +182,7 @@ nav {
 .header-banner {
   width: 100%;
   height: calc(100vh - 50px);
-  background-image: url("./images/header-section/header-mobile.svg");
+  background-image: url("../../images/header-section/header-mobile.svg");
   background-repeat: no-repeat;
   border-bottom-left-radius: 60px;
   background-position: center;
@@ -438,7 +438,6 @@ ul {
   padding-bottom: 60px;
   border-top-left-radius: 60px;
   position: relative;
-  z-index: 1;
 }
 
 .languages {
@@ -510,7 +509,7 @@ ul {
   align-items: center;
   width: 100%;
   flex-direction: column;
-  background-image: url("./images/contact-shapes/contact-form-shapes-mobile.svg");
+  background-image: url("../../images/contact-shapes/contact-form-shapes-mobile.svg");
   padding-top: 100px;
   background-position: right;
   background-repeat: no-repeat;
@@ -652,7 +651,7 @@ textarea::placeholder {
   }
 
   .header-banner {
-    background-image: url("./images/header-section/Header-deskbg.svg");
+    background-image: url("../../images/header-section/Header-deskbg.svg");
     background-size: contain;
     width: 100%;
     background-position: center;
@@ -841,7 +840,7 @@ textarea::placeholder {
 
   /* FORM */
   #contact {
-    background-image: url("./images/contact-shapes/contact-form-desk@2x.svg");
+    background-image: url("../../images/contact-shapes/contact-form-desk@2x.svg");
     background-size: contain;
     width: 100%;
     height: calc(100vh - 175px);
@@ -878,6 +877,7 @@ textarea::placeholder {
   inset: 0;
   background-color: rgba(128, 128, 128, 0.9);
   overflow: scroll;
+  z-index: 3;
 }
 
 .modal-box {

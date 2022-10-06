@@ -1,13 +1,15 @@
 const openMenu = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const crossDiv = document.querySelector('.close-menu');
-openMenu.addEventListener('click', () => {
+
+const openMobileMenu = () => {
   mobileMenu.classList.toggle('open');
   mobileMenu.style.display = 'block';
   mobileMenu.style.height = '100vh';
   openMenu.style.visibility = 'hidden';
   crossDiv.style.visibility = 'visible';
-});
+}
+openMenu.addEventListener('click', openMobileMenu);
 
 crossDiv.addEventListener('click', () => {
   mobileMenu.classList.remove('open');
@@ -42,31 +44,29 @@ mobileMenu.addEventListener('click', () => {
 const array = [
   {
     id: '1',
-    title: 'Tonic',
-    titleDesktop: 'Tonic',
+    title: 'Music Festival Webpage',
+    titleDesktop: 'Music Festival Webpage',
     mobileDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'Responsive Music festival web-page created with HTML, CSS and JavaScript. The files are organized and improved for a better performance.',
     desktopDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'Responsive Music festival web-page created with HTML, CSS and JavaScript. The files are organized and improved for a better performance.',
     longDescription:
-    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    'This is one of my first webpages I\'ve created, I put this project on top because building this webpage made me realize how much I love creating webpages. In this project I used HTML, CSS and JavaScript, I also added a video and optimized the images to improve the performance of the page.',
     featured: ['Canopy', 'Back End Dev', 2015],
     featuredDesktop: ['Canopy', 'Back End Dev', 2015],
-    image: './images/works-section/project1.svg',
-    desktopImage: './images/works-section/desktop/project1.svg',
+    image: '../../images/projects/musicFestival.png',
+    desktopImage: '../../images/projects/musicFestival.png',
     side: 'left-side',
     technologies: ['html', 'css', 'javascript'],
-    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
+    technologiesDesktop: ['html', 'css', 'javascript'],
     technologiesModal: [
       'html',
       'css',
       'javascript',
       'github',
-      'ruby',
-      'bootstraps',
     ],
-    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
-    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
+    liveURL: 'https://oscarfmdev.github.io/musicFestival/',
+    sourceURL: 'https://github.com/OscarFMdev/musicFestival',
   },
 
   {
@@ -188,11 +188,9 @@ for (let i = 0; i < array.length; i += 1) {
       <li class="li-button mobile-card">${array[i].technologies[1]}</li>
       <li class="li-button mobile-card">${array[i].technologies[2]}</li>
 
-
       <li class="li-button desktop-card">${array[i].technologiesDesktop[0]}</li>
       <li class="li-button desktop-card">${array[i].technologiesDesktop[1]}</li>
       <li class="li-button desktop-card">${array[i].technologiesDesktop[2]}</li>
-      <li class="li-button desktop-card">${array[i].technologiesDesktop[3]}</li>
     </ul>
     <button id=${array[i].id - 1} class="project-button">See Project</button>
   </div>
