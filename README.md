@@ -24,7 +24,7 @@ The main goals of this project are:
 
 ## Live Demo
 
-[Live Demo Link](https://oscarfmdev.github.io/PortfolioProject/)
+[Live Demo Link](https://oscarfmdev.github.io/Portfolio/)
 
 
 <!-- ## Getting Started
