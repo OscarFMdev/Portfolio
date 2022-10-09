@@ -52,8 +52,8 @@ const array = [
       'Responsive Music festival web-page created with HTML, CSS and JavaScript. The files are organized and improved for a better performance.',
     longDescription:
     'This is one of my first webpages I\'ve created, I put this project on top because building this webpage made me realize how much I love creating webpages. In this project I used HTML, CSS and JavaScript, I also added a video and optimized the images to improve the performance of the page.',
-    featured: ['Canopy', 'Back End Dev', 2015],
-    featuredDesktop: ['Canopy', 'Back End Dev', 2015],
+    featured: ['Personal project', 'Front End', 2022],
+    featuredDesktop: ['Personal project', 'Front End', 2022],
     image: './images/projects/musicFestival.png',
     desktopImage: './images/projects/musicFestival.png',
     side: 'left-side',
@@ -64,6 +64,8 @@ const array = [
       'css',
       'javascript',
       'github',
+      'personal project',
+      'front end'
     ],
     liveURL: 'https://oscarfmdev.github.io/musicFestival/',
     sourceURL: 'https://github.com/OscarFMdev/musicFestival',
@@ -71,21 +73,21 @@ const array = [
 
   {
     id: '2',
-    title: 'Multi-Post Stories',
-    titleDesktop: 'Multi-Post Stories',
+    title: 'To Do List',
+    titleDesktop: 'To Do List',
     mobileDescription:
-      'A convenient way to keep track of their daily routine works.',
+      'An app for adding, editing and removing using HTML, CSS and JavaScript',
     desktopDescription:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      'This is an app built with HTML, CSS and JavaScript, with this webpage you can add, edit and delete tasks.',
     longDescription:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    featured: ['Canopy', 'Back End Dev', 2015],
-    featuredDesktop: ['Facebook', 'Full Stack Dev', 2015],
-    image: './images/works-section/project2.svg',
-    desktopImage: './images/works-section/desktop/project2.svg',
+      'This is an app built with HTML, CSS and JavaScript, with this webpage you can add, edit and delete tasks. The code is organized in modules and I used webpack to make the code accessible to most of the browsers.',
+    featured: ['Microverse', 'Front End', 2022],
+    featuredDesktop: ['Microverse', 'Front End', 2022],
+    image: './images/projects/ToDoList.png',
+    desktopImage: './images/projects/ToDoList.png',
     side: 'right-side',
-    technologies: ['html', 'ruby on rails', 'css', 'javascript'],
-    technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
+    technologies: ['html', 'css', 'javascript', 'github'],
+    technologiesDesktop: ['html', 'css', 'javascript', 'github'],
     technologiesModal: [
       'html',
       'css',
@@ -94,8 +96,8 @@ const array = [
       'ruby',
       'bootstraps',
     ],
-    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
-    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
+    liveURL: 'https://oscarfmdev.github.io/ToDoList/build/',
+    sourceURL: 'https://github.com/OscarFMdev/ToDoList',
   },
 
   {
