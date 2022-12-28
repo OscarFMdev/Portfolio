@@ -12,7 +12,6 @@ The main goals of this project are:
 - Build a personal portfolio site.
 - Use images and backgrounds to enhance the look of the website.
 
-
 ## Built With
 
 - Figma
