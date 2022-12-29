@@ -7,6 +7,7 @@ The technologies used are: Figma, linters, Git, HTML, CSS, and Linux terminal.
 
 The main goals of this project are:
 
+
 - Understand how to parse a Figma design to create a UI.
 - Flexbox to place elements in the page.
 - Build a personal portfolio site.
