@@ -107,9 +107,9 @@ const array = [
     mobileDescription:
       'BudgetWizard is an App built with Ruby on Rails, allows the user to keep track of their transactions.',
     desktopDescription:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      "BudgetWizard is an App built with Ruby on Rails, allows the user to keep track of their transactions. It uses Ruby on Rails for the server, PostgreSQL as the database, Devise to user authentication.",
     longDescription:
-    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    'BudgetWizard is an App built with Ruby on Rails, allows the user to keep track of their transactions. It uses Ruby on Rails for the server, PostgreSQL as the database, Devise to user authentication, SendGrid to send email user validations, and Amazon S3 to store files.',
     featured: ['Rails', 'Full-Stack Dev', 2023],
     featuredDesktop: ['Rails', 'Full Stack Dev', 2023],
     image: './images/projects/budgetWizard.png',
@@ -131,15 +131,15 @@ const array = [
 
   {
     id: '4',
-    title: 'Multi-Post Stories',
-    titleDesktop: 'Uber navigation',
-    mobileDescription: 'MyBudget is a budget manager application.',
+    title: 'OOP-Library',
+    titleDesktop: 'OOP-Library',
+    mobileDescription: 'OOP-Library is a terminal application to store rentals.',
     desktopDescription:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'OOP-Library is a terminal application to store rentals. It is built with Ruby and uses gems like colorizer to add colors to the terminal.',
     longDescription:
-    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    featured: ['Canopy', 'Back End Dev', 2015],
-    featuredDesktop: ['Uber', 'Lead developer', 2018],
+    'OOP-Library is a terminal application to store rentals. It is built with Ruby and uses gems like colorizer to add colors to the terminal.',
+    featured: ['Ruby', 'Back End Dev', 2022],
+    featuredDesktop: ['Ruby', 'Back End Dev', 2022],
     image: './images/projects/OOP-Library.png',
     desktopImage: './images/projects/OOP-Library.png',
     side: 'right-side',
