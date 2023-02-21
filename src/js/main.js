@@ -102,10 +102,10 @@ const array = [
 
   {
     id: '3',
-    title: 'Tonic',
-    titleDesktop: 'Facebook 360',
+    title: 'BudgetWizard',
+    titleDesktop: 'BudgetWizard',
     mobileDescription:
-      'This is a rocket booking and mission joining application.',
+      'BudgetWizard is an App built with Ruby on Rails, allows the user to keep track of their transactions.',
     desktopDescription:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     longDescription:
@@ -118,15 +118,15 @@ const array = [
     technologies: ['html', 'css', 'javascript'],
     technologiesDesktop: ['html', 'css', 'ruby on rails', 'javascript'],
     technologiesModal: [
-      'html',
-      'css',
-      'javascript',
-      'github',
+      'Rails',
+      'PostgreSQL',
+      'Devise',
+      'Amazon S3',
       'ruby',
-      'bootstraps',
+      'SendGrid',
     ],
-    liveURL: 'https://oscarfmdev.github.io/PortfolioProject/',
-    sourceURL: 'https://github.com/OscarFMdev/PortfolioProject',
+    liveURL: 'https://budget-wizard.fly.dev/welcome',
+    sourceURL: 'https://github.com/OscarFMdev/BudgetWizard',
   },
 
   {
