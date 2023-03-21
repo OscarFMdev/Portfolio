@@ -8,16 +8,18 @@ const openMobileMenu = () => {
   mobileMenu.style.height = '100vh';
   openMenu.style.visibility = 'hidden';
   crossDiv.style.visibility = 'visible';
-}
-openMenu.addEventListener('click', openMobileMenu);
+};
 
-crossDiv.addEventListener('click', () => {
+const closeMenu = () => {
   mobileMenu.classList.remove('open');
   mobileMenu.style.height = '0';
   openMenu.style.visibility = 'visible';
   crossDiv.style.visibility = 'hidden';
   mobileMenu.style.height = '0';
-});
+};
+openMenu.addEventListener('click', openMobileMenu);
+
+crossDiv.addEventListener('click', () => closeMenu);
 
 window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {
@@ -65,7 +67,7 @@ const array = [
       'javascript',
       'github',
       'personal project',
-      'front end'
+      'front end',
     ],
     liveURL: 'https://oscarfmdev.github.io/musicFestival/',
     sourceURL: 'https://github.com/OscarFMdev/musicFestival',
@@ -107,7 +109,7 @@ const array = [
     mobileDescription:
       'BudgetWizard is an App built with Ruby on Rails, allows the user to keep track of their transactions.',
     desktopDescription:
-      "BudgetWizard is an App built with Ruby on Rails, allows the user to keep track of their transactions. It uses Ruby on Rails for the server, PostgreSQL as the database, Devise to user authentication.",
+      'BudgetWizard is an App built with Ruby on Rails, allows the user to keep track of their transactions. It uses Ruby on Rails for the server, PostgreSQL as the database, Devise to user authentication.',
     longDescription:
     'BudgetWizard is an App built with Ruby on Rails, allows the user to keep track of their transactions. It uses Ruby on Rails for the server, PostgreSQL as the database, Devise to user authentication, SendGrid to send email user validations, and Amazon S3 to store files.',
     featured: ['Rails', 'Full-Stack Dev', 2023],

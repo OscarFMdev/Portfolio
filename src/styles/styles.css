@@ -30,6 +30,7 @@ html {
   -webkit-box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
   z-index: 2;
+  position: fixed;
 }
 
 * {
@@ -353,10 +354,6 @@ ul {
   display: none;
 }
 
-.project:hover {
-  border: 1px solid var(--projectPurple);
-}
-
 .buttons-flex {
   display: flex;
   column-gap: 10px;
@@ -416,6 +413,9 @@ ul {
 .contact-button:hover {
   color: white;
   background-color: var(--projectPurple);
+  border: 1px solid white;
+  cursor: pointer;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .resume-button:focus,
@@ -513,6 +513,41 @@ ul {
   padding-top: 100px;
   background-position: right;
   background-repeat: no-repeat;
+  height: 95vh;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: var(--projectPurple);
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  100% {
+    border-color: var(--projectPurple);
+  }
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .contact-header,
@@ -547,6 +582,7 @@ ul {
   align-items: center;
   padding-bottom: 50px;
   margin-top: 50px;
+  width: 100vw;
 }
 
 .form-container textarea,
@@ -589,7 +625,6 @@ textarea::placeholder {
 
   .header {
     padding-top: 10px;
-    position: fixed !important;
   }
 
   .hamburger {
@@ -631,7 +666,7 @@ textarea::placeholder {
 
   .logo {
     font-size: 24px;
-    min-width: 100.6px;
+    min-width: 105.6px;
     animation-duration: 3s;
   }
 
