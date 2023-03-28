@@ -990,7 +990,9 @@ textarea::placeholder {
     flex: 60%;
     padding: 16px 20px 70px;
   }
-
+  #works {
+    justify-items: center;
+  }
   .source-box {
     width: 350px;
     margin-top: 10px;
