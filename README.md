@@ -51,7 +51,7 @@ This project uses HTML, CSS and JavaScript.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://oscarfm.dev/)
+- [Live Demo Link](https://oscarfm-dev.web.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
