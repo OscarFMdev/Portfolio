@@ -46,6 +46,34 @@ mobileMenu.addEventListener('click', () => {
 const array = [
   {
     id: '1',
+    title: 'Marriott Reservation',
+    titleDesktop: 'Marriott Reservation',
+    mobileDescription:
+      'Marriott reservation is a Full Stack web application, it uses Ruby on Rails as an API and the Front End is created with React.',
+    desktopDescription:
+      'Marriott reservation is a Full Stack web application, it uses Ruby on Rails as an API and the Front End is created with React.',
+    longDescription:
+    'Marriott reservation is a Full Stack web application, it uses Ruby on Rails as an API and the Front End is created with React, it uses JWT and devise for user authentication, my team and I built this project, we separated our task in Front end and Back End, using GitHub projects (Kanban) and Figma to organize our efforts.',
+    featured: ['Ruby on Rails', 'Full Stack', 2023],
+    featuredDesktop: ['Ruby on Rails', 'Full Stack', 2023],
+    image: './images/projects/marriott.png',
+    desktopImage: './images/projects/marriott.png',
+    side: 'right-side',
+    technologies: ['Ruby on Rails', 'React', 'JavaScript'],
+    technologiesDesktop: ['Ruby on Rails', 'React', 'JavaScript'],
+    technologiesModal: [
+      'Ruby on Rails',
+      'CSS',
+      'JavaScript',
+      'GitHub',
+      'Full Stack app',
+      'React',
+    ],
+    liveURL: 'https://marriott-reservation.netlify.app/',
+    sourceURL: 'https://github.com/OscarFMdev/Marriott-Reservation-Frontend',
+  },
+  {
+    id: '2',
     title: 'Music Festival Webpage',
     titleDesktop: 'Music Festival Webpage',
     mobileDescription:
@@ -74,7 +102,7 @@ const array = [
   },
 
   {
-    id: '2',
+    id: '3',
     title: 'To Do List',
     titleDesktop: 'To Do List',
     mobileDescription:
@@ -103,7 +131,7 @@ const array = [
   },
 
   {
-    id: '3',
+    id: '4',
     title: 'BudgetWizard',
     titleDesktop: 'BudgetWizard',
     mobileDescription:
@@ -132,7 +160,7 @@ const array = [
   },
 
   {
-    id: '4',
+    id: '5',
     title: 'OOP-Library',
     titleDesktop: 'OOP-Library',
     mobileDescription: 'OOP-Library is a terminal application to store rentals.',
@@ -222,17 +250,8 @@ for (let index = 0; index < modalButton.length; index += 1) {
               <div>
                 <h3 class="modal-title">${array[pos].title}</h3>
                 <div class="project-data" style="margin-bottom= 150px;">
-                  <p class="bold mobile-card">${array[pos].featured[0]}</p>
-                  <p class="middot mobile-card">•</p>
-                  <p class="mobile-card">${array[pos].featured[1]}</p>
-                  <p class="middot mobile-card">•</p>
-                  <p class="mobile-card">${array[pos].featured[2]}</p>
-
-                  <p class="bold desktop-card">${array[pos].featuredDesktop[0]}</p>
-                  <p class="middot desktop-card">•</p>
-                  <p class="desktop-card">${array[pos].featuredDesktop[1]}</p>
-                  <p class="middot desktop-card">•</p>
-                  <p class="desktop-card">${array[pos].featuredDesktop[2]}</p>
+                  <p class="bold mobile-card">${array[pos].featured.map(feature => `<p class="mobile-card">${feature}</p>`).join('')}</p>
+                  <p class="bold desktop-card">${array[pos].featuredDesktop.map(feature => `<p class="desktop-card">${feature}</p>`).join('')}</p>
                 </div>
               </div>
               <img src="./images/modal/close-modal.svg" alt="close modal image" class="close-modal" onclick="close()" width="20" height="20">
@@ -321,3 +340,30 @@ if (savedFormData != null) {
   emailInput.value = savedFormData.email;
   messageInput.value = savedFormData.messageInput;
 }
+
+/* DROP-DOWN */
+const languagesToggle = document.querySelector('.ar-lan');
+const languages = document.querySelector('.languages-boxes');
+
+const frameworksToggle = document.querySelector('.ar-fram');
+const frameworks = document.querySelector('.frameworks-boxes');
+
+
+
+const skillsToggle = document.querySelector('.ar-skills');
+const skills = document.querySelector('.skills-box');
+
+languagesToggle.addEventListener('click', function() {
+  languagesToggle.classList.toggle('rotate');
+  languages.classList.toggle('show');
+});
+
+frameworksToggle.addEventListener('click', function() {
+  frameworksToggle.classList.toggle('rotate');
+  frameworks.classList.toggle('show');
+});
+
+skillsToggle.addEventListener('click', function() {
+  skillsToggle.classList.toggle('rotate');
+  skills.classList.toggle('show');
+});

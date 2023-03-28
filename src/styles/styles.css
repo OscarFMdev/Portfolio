@@ -317,6 +317,7 @@ ul {
   font-weight: 700;
   line-height: 44px;
   text-align: left;
+  margin-top: 20px;
 }
 
 .project-data {
@@ -455,6 +456,8 @@ ul {
 .arrow {
   width: 15px;
   height: 15px;
+  cursor: pointer;
+  transition: 0.5s linear;
 }
 
 .languages-section {
@@ -467,15 +470,40 @@ ul {
 
 .frameworks,
 .skills {
-  border-bottom: 0.2px solid #dfe1e6;
   padding-bottom: 20px;
 }
 
-.languages-boxes {
+.languages-boxes,
+.frameworks-boxes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-width: 250px;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.languages-boxes,
+.skills-box,
+.frameworks-boxes {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+}
+
+.skills-box {
+  margin: 1% 10%;
+}
+
+.skills-box li:nth-child(odd) {
+  background-color: var(--languageBoxColor);
 }
 
 .language-box {
@@ -493,6 +521,11 @@ ul {
   line-height: 20px;
   text-align: left;
   margin-left: 10px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  transition: 0.5s linear;
 }
 
 /* FORM */
@@ -514,40 +547,6 @@ ul {
   background-position: right;
   background-repeat: no-repeat;
   height: 95vh;
-}
-
-@keyframes pulse {
-  0% {
-    border-color: var(--projectPurple);
-  }
-
-  50% {
-    border-color: #fff;
-  }
-
-  100% {
-    border-color: var(--projectPurple);
-  }
-}
-
-@keyframes fill {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes rotate-border {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .contact-header,
@@ -733,7 +732,8 @@ textarea::placeholder {
   .project {
     flex-direction: row;
     flex: 1 1 auto;
-    max-width: 70%;
+    max-width: 1300px;
+    width: 70%;
     margin: 0;
     padding: 0;
     min-width: 700px;
@@ -794,6 +794,11 @@ textarea::placeholder {
     background-color: var(--projectPurple);
   }
 
+  .project:hover {
+    border: 2px solid var(--projectPurple);
+    scale: 1.03;
+  }
+
   /* ABOUT MYSELF */
   #about {
     display: flex;
@@ -809,7 +814,8 @@ textarea::placeholder {
     margin-top: 50px;
   }
 
-  .languages-boxes {
+  .languages-boxes,
+  .frameworks-boxes {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -870,7 +876,7 @@ textarea::placeholder {
   }
 
   .frameworks {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   /* FORM */

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "oscarfm-dev"
+  },
+  "targets": {
+    "oscarfm-dev": {
+      "hosting": {
+        "oscarfm-dev": [
+          "https://oscarfm.dev"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
