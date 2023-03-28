@@ -30,6 +30,7 @@ html {
   -webkit-box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 14px 45px -4px rgba(0, 0, 0, 0.17);
   z-index: 2;
+  position: fixed;
 }
 
 * {
@@ -157,6 +158,10 @@ nav {
   max-width: 250px;
   animation-duration: 1s;
   animation-name: grow;
+}
+
+.close-menu .text-white {
+  visibility: hidden;
 }
 
 .name,
@@ -316,6 +321,7 @@ ul {
   font-weight: 700;
   line-height: 44px;
   text-align: left;
+  margin-top: 20px;
 }
 
 .project-data {
@@ -351,10 +357,6 @@ ul {
 
 .desktop-image {
   display: none;
-}
-
-.project:hover {
-  border: 1px solid var(--projectPurple);
 }
 
 .buttons-flex {
@@ -416,6 +418,9 @@ ul {
 .contact-button:hover {
   color: white;
   background-color: var(--projectPurple);
+  border: 1px solid white;
+  cursor: pointer;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .resume-button:focus,
@@ -455,6 +460,8 @@ ul {
 .arrow {
   width: 15px;
   height: 15px;
+  cursor: pointer;
+  transition: 0.5s linear;
 }
 
 .languages-section {
@@ -467,15 +474,40 @@ ul {
 
 .frameworks,
 .skills {
-  border-bottom: 0.2px solid #dfe1e6;
   padding-bottom: 20px;
 }
 
-.languages-boxes {
+.languages-boxes,
+.frameworks-boxes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-width: 250px;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.languages-boxes,
+.skills-box,
+.frameworks-boxes {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+}
+
+.skills-box {
+  margin: 1% 10%;
+}
+
+.skills-box li:nth-child(odd) {
+  background-color: var(--languageBoxColor);
 }
 
 .language-box {
@@ -493,6 +525,11 @@ ul {
   line-height: 20px;
   text-align: left;
   margin-left: 10px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  transition: 0.5s linear;
 }
 
 /* FORM */
@@ -513,6 +550,7 @@ ul {
   padding-top: 100px;
   background-position: right;
   background-repeat: no-repeat;
+  height: 95vh;
 }
 
 .contact-header,
@@ -547,6 +585,7 @@ ul {
   align-items: center;
   padding-bottom: 50px;
   margin-top: 50px;
+  width: 100vw;
 }
 
 .form-container textarea,
@@ -589,7 +628,6 @@ textarea::placeholder {
 
   .header {
     padding-top: 10px;
-    position: fixed !important;
   }
 
   .hamburger {
@@ -631,7 +669,7 @@ textarea::placeholder {
 
   .logo {
     font-size: 24px;
-    min-width: 100.6px;
+    min-width: 105.6px;
     animation-duration: 3s;
   }
 
@@ -698,7 +736,8 @@ textarea::placeholder {
   .project {
     flex-direction: row;
     flex: 1 1 auto;
-    max-width: 70%;
+    max-width: 1300px;
+    width: 70%;
     margin: 0;
     padding: 0;
     min-width: 700px;
@@ -759,6 +798,11 @@ textarea::placeholder {
     background-color: var(--projectPurple);
   }
 
+  .project:hover {
+    border: 2px solid var(--projectPurple);
+    scale: 1.03;
+  }
+
   /* ABOUT MYSELF */
   #about {
     display: flex;
@@ -774,7 +818,8 @@ textarea::placeholder {
     margin-top: 50px;
   }
 
-  .languages-boxes {
+  .languages-boxes,
+  .frameworks-boxes {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -835,7 +880,7 @@ textarea::placeholder {
   }
 
   .frameworks {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   /* FORM */
@@ -948,6 +993,10 @@ textarea::placeholder {
   .desc {
     flex: 60%;
     padding: 16px 20px 70px;
+  }
+
+  #works {
+    justify-items: center;
   }
 
   .source-box {
