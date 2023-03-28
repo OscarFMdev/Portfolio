@@ -250,8 +250,8 @@ for (let index = 0; index < modalButton.length; index += 1) {
               <div>
                 <h3 class="modal-title">${array[pos].title}</h3>
                 <div class="project-data" style="margin-bottom= 150px;">
-                  <p class="bold mobile-card">${array[pos].featured.map(feature => `<p class="mobile-card">${feature}</p>`).join('')}</p>
-                  <p class="bold desktop-card">${array[pos].featuredDesktop.map(feature => `<p class="desktop-card">${feature}</p>`).join('')}</p>
+                  <p class="bold mobile-card">${array[pos].featured.map((feature) => `<p class="mobile-card">${feature}</p>`).join('')}</p>
+                  <p class="bold desktop-card">${array[pos].featuredDesktop.map((feature) => `<p class="desktop-card">${feature}</p>`).join('')}</p>
                 </div>
               </div>
               <img src="./images/modal/close-modal.svg" alt="close modal image" class="close-modal" onclick="close()" width="20" height="20">
@@ -348,22 +348,20 @@ const languages = document.querySelector('.languages-boxes');
 const frameworksToggle = document.querySelector('.ar-fram');
 const frameworks = document.querySelector('.frameworks-boxes');
 
-
-
 const skillsToggle = document.querySelector('.ar-skills');
 const skills = document.querySelector('.skills-box');
 
-languagesToggle.addEventListener('click', function() {
+languagesToggle.addEventListener('click', () => {
   languagesToggle.classList.toggle('rotate');
   languages.classList.toggle('show');
 });
 
-frameworksToggle.addEventListener('click', function() {
+frameworksToggle.addEventListener('click', () => {
   frameworksToggle.classList.toggle('rotate');
   frameworks.classList.toggle('show');
 });
 
-skillsToggle.addEventListener('click', function() {
+skillsToggle.addEventListener('click', () => {
   skillsToggle.classList.toggle('rotate');
   skills.classList.toggle('show');
 });
