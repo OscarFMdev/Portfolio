@@ -160,6 +160,10 @@ nav {
   animation-name: grow;
 }
 
+.close-menu .text-white {
+  visibility: hidden;
+}
+
 .name,
 .about {
   padding-top: 70px;
@@ -990,9 +994,11 @@ textarea::placeholder {
     flex: 60%;
     padding: 16px 20px 70px;
   }
+
   #works {
     justify-items: center;
   }
+
   .source-box {
     width: 350px;
     margin-top: 10px;
