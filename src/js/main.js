@@ -17,6 +17,12 @@ const closeMenu = () => {
   crossDiv.style.visibility = 'hidden';
   mobileMenu.style.height = '0';
 };
+
+const openInNewTab = (url) => {
+  const win = window.open(url, '_blank');
+  win.focus();
+};
+
 openMenu.addEventListener('click', openMobileMenu);
 
 crossDiv.addEventListener('click', () => closeMenu);
@@ -161,30 +167,30 @@ const array = [
 
   {
     id: '5',
-    title: 'OOP-Library',
-    titleDesktop: 'OOP-Library',
-    mobileDescription: 'OOP-Library is a terminal application to store rentals.',
+    title: 'Countries Info',
+    titleDesktop: 'Countries Info',
+    mobileDescription: 'Countries Info is a Single Page Application which provides the user the information of the specified country.',
     desktopDescription:
-      'OOP-Library is a terminal application to store rentals. It is built with Ruby and uses gems like colorizer to add colors to the terminal.',
+      'Countries Info is a Single Page Application, the user can search for countries and click on any flag to know more about this country. Built with React and Redux.',
     longDescription:
-    'OOP-Library is a terminal application to store rentals. It is built with Ruby and uses gems like colorizer to add colors to the terminal.',
-    featured: ['Ruby', 'Back End Dev', 2022],
-    featuredDesktop: ['Ruby', 'Back End Dev', 2022],
-    image: './images/projects/OOP-Library.png',
-    desktopImage: './images/projects/OOP-Library.png',
+    'Countries Info is a Single Page Application, the user can search for countries and click on any flag to know more about this country. Built with React and Redux. It uses an API to retrieve information about each country.',
+    featured: ['React', 'Front End Dev', 2022],
+    featuredDesktop: ['React', 'Front End Dev', 2022],
+    image: './images/projects/CountriesInfo.png',
+    desktopImage: './images/projects/CountriesInfo.png',
     side: 'right-side',
-    technologies: ['Ruby', 'Colorizer', 'Terminal App'],
-    technologiesDesktop: ['Terminal App', 'Ruby', 'Colorizer', 'Gemfile'],
+    technologies: ['React', 'Redux', 'API'],
+    technologiesDesktop: ['React', 'Redux', 'API', 'GitHub'],
     technologiesModal: [
-      'Terminal App',
-      'Gemfile',
-      'Colorizer',
-      'github',
-      'ruby',
-      '',
+      'React',
+      'Redux',
+      'API',
+      'CSS',
+      'HTML',
+      'GitHub',
     ],
-    liveURL: 'https://github.com/OscarFMdev/OOP-library',
-    sourceURL: 'https://github.com/OscarFMdev/OOP-library',
+    liveURL: 'https://oscarfmdev-countries.netlify.app/',
+    sourceURL: 'https://github.com/OscarFMdev/countries-info',
   },
 ];
 
@@ -276,12 +282,13 @@ for (let index = 0; index < modalButton.length; index += 1) {
                     </ul>
                   </div>
                   <div class="source-box">
-                    <a class="btn-modal live" target="_blank" rel="noopener noreferrer" href="${array[pos].liveURL}">See Live
-                      <img src="./images/modal/live.svg" alt="live image">
-                    </a>
-                    <a class="btn-modal source" target="_blank" rel="noopener noreferrer" href="${array[pos].sourceURL}">See Source
-                      <img src="./images/modal/source.svg" alt="source image">
-                    </a>
+                  <a class="btn-modal live" href="#" onclick="openInNewTab('${array[pos].liveURL}')">
+                    See Live <img src="./images/modal/live.svg" alt="live image">
+                  </a>
+                
+                  <a class="btn-modal source" href="#" onclick="openInNewTab('${array[pos].sourceURL}')">
+                    See Source <img src="./images/modal/source.svg" alt="source image">
+                  </a>
                   </div> <!-- source-box -->
                 </div> <!-- tech-box -->
               </div> <!-- description -->
