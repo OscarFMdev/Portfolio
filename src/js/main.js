@@ -282,11 +282,11 @@ for (let index = 0; index < modalButton.length; index += 1) {
                     </ul>
                   </div>
                   <div class="source-box">
-                  <a class="btn-modal live" href="#" onclick="openInNewTab('${array[pos].liveURL}')">
+                  <a class="btn-modal live" href="#" onclick="${openInNewTab(array[pos].liveURL)}">
                     See Live <img src="./images/modal/live.svg" alt="live image">
                   </a>
                 
-                  <a class="btn-modal source" href="#" onclick="openInNewTab('${array[pos].sourceURL}')">
+                  <a class="btn-modal source" href="#" onclick="${openInNewTab(array[pos].sourceURL)}">
                     See Source <img src="./images/modal/source.svg" alt="source image">
                   </a>
                   </div> <!-- source-box -->
