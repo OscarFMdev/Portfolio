@@ -276,10 +276,10 @@ for (let index = 0; index < modalButton.length; index += 1) {
                     </ul>
                   </div>
                   <div class="source-box">
-                    <a class="btn-modal live" href="${array[pos].liveURL}">See Live
+                    <a class="btn-modal live" target="_blank" rel="noopener noreferrer" href="${array[pos].liveURL}">See Live
                       <img src="./images/modal/live.svg" alt="live image">
                     </a>
-                    <a class="btn-modal source" href="${array[pos].sourceURL}">See Source
+                    <a class="btn-modal source" target="_blank" rel="noopener noreferrer" href="${array[pos].sourceURL}">See Source
                       <img src="./images/modal/source.svg" alt="source image">
                     </a>
                   </div> <!-- source-box -->
