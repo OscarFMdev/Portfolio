@@ -550,7 +550,7 @@ ul {
   padding-top: 100px;
   background-position: right;
   background-repeat: no-repeat;
-  height: 95vh;
+  height: 100vh;
 }
 
 .contact-header,
@@ -583,7 +583,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
   margin-top: 50px;
   width: 100vw;
 }
@@ -906,6 +905,7 @@ textarea::placeholder {
   .form-container {
     width: 550px;
     margin-top: 10px;
+    padding-bottom: 100px;
   }
 
   .contact-button {
