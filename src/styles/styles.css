@@ -152,6 +152,7 @@ nav {
   margin-top: 20px;
   margin-left: 20px;
   min-width: 270px;
+  text-align: justify;
 }
 
 .name {
@@ -711,6 +712,7 @@ textarea::placeholder {
     line-height: 60px;
     max-width: 400px;
   }
+
 
   .introduction,
   .connect-text {
